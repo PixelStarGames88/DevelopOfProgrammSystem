@@ -153,7 +153,6 @@ public partial class MyForm : Form
 
     private void EnterToEditAcc_Click(object o, EventArgs e)
     {
-        
         _accEditorWindow.Open();
         _workDesk.Close();
     }
@@ -242,7 +241,6 @@ public partial class MyForm : Form
                 {
                     _saveArrayAsWindow.Close();
                     _workDesk.Open();
-                    MessageBox.Show("Array " + _saveArrayAsWindow.LastNameBox.Text + " was added!", "Info");
                 }
                 else
                 {
