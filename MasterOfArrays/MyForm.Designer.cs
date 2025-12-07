@@ -72,6 +72,7 @@ partial class MyForm
         _workDesk.saveArrayToolStripMenuItem_Click(SaveArray_Click);
         _workDesk.exitFromProgrammToolStripMenuItep_Click(ExitFromProgramm_Click);
         _workDesk.deleteArrayToolStripMenuItem_Click(DeleteArray_Click);
+        _workDesk.showInfoToolStripMenuItep_Click(ShowInfo_Click);
 
         _arrayEditWindow.ClearArrayButton_Click(Clear_Click);
         _arrayEditWindow.FillRandomNumberButton_Click(OpenRandomNumberWindow_Click);
@@ -96,7 +97,7 @@ partial class MyForm
 
         _accEditorWindow.BackButton_Click(BackToWorkDesk_Click);
         _accEditorWindow.DeleteAccButton_Click(DeleteAcc_Click);
-        _accEditorWindow.ExitButton_Click(ExitFromProgramm_Click);
+        _accEditorWindow.ExitButton_Click(ExitFromAccount_Click);
         _accEditorWindow.ApplyButton_Click(Apply_Click);
     }
 

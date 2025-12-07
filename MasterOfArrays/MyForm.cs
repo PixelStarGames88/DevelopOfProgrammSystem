@@ -283,18 +283,8 @@ public partial class MyForm : Form
     }
     private void ChoiceArrayForOpen_Click(object o, EventArgs e)
     {
-        MessageBoxButtons button = MessageBoxButtons.YesNoCancel;
-        DialogResult result = MessageBox.Show("Do you want to save your array?", "Message", button);
-        if (result == DialogResult.Yes)
-        {
-            SaveArray_Click(o, e);
-        }
-        else if (result == DialogResult.Cancel)
-        {
-            return;
-        }
-
         string ArrayString;
+
         if (_dateBaseConnector.GetArrayFromDB(out ArrayString, _openArrayWindow.LastNameBox.Text))
         {
             _workDesk.WorkField.Text = ArrayString;
@@ -392,5 +382,14 @@ public partial class MyForm : Form
         {
             MessageBox.Show("Operation is not success!", "Info");
         }
+    }
+    private void ExitFromAccount_Click(object o, EventArgs e)
+    {
+        _workDesk.Close();
+        _enterWindow.Open();
+    }
+    private void ShowInfo_Click(object o, EventArgs e)
+    {
+        MessageBox.Show("Welcome to the best programm for working with arrays!!!\nMaded by Ilya Vasyanin, student of 444 group!!!\nYou can save, open and delete arrays in panel menu in chapter \"File\".\nYou can edit your account if you click on your login in panel menu.\nProgramm allows clear array, show sorted and source array.\nYou can add numbers in array, typing on text box, with window for random numbers and downloading from your stored arrays. Good luck!", "Info");
     }
 }
