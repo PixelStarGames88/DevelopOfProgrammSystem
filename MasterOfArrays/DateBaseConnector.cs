@@ -39,8 +39,8 @@ public class DateBaseConnector
             User_Last_Name TEXT,
             User_Password TEXT
         );";
-        using var cmd1 = new SqliteCommand(createTableUsers, connection);
-        cmd1.ExecuteNonQuery();
+        using var cmdCreateTableUsers = new SqliteCommand(createTableUsers, connection);
+        cmdCreateTableUsers.ExecuteNonQuery();
 
         var createTableUserArrays = @"
         CREATE TABLE IF NOT EXISTS UserArrays
@@ -52,8 +52,8 @@ public class DateBaseConnector
             PRIMARY KEY(User_ID, Array_Unique_Name)
         );";
 
-        using var cmd2 = new SqliteCommand(createTableUserArrays, connection);
-        cmd2.ExecuteNonQuery();
+        using var cmdCreateTableUserArrays = new SqliteCommand(createTableUserArrays, connection);
+        cmdCreateTableUserArrays.ExecuteNonQuery();
     }
 
     public bool AddUser(string login, string password, string firstName, string lastName)
@@ -111,7 +111,7 @@ public class DateBaseConnector
     }
     public bool ChangeUserData(string currentligin, string firstName, string lastName, string login, string password)
     {
-        if (login.Length == 0 || password.Length == 0 || firstName.Length == 0 || lastName.Length == 0) return false;
+        if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName)) return false;
 
         using var connection = new SqliteConnection($"Data Source={_dbPath}");
         connection.Open();

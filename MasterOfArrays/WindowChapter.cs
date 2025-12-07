@@ -1,10 +1,10 @@
 ﻿namespace MasterOfArrays;
 
-public class ChapterWindow
+public class WindowChapter
 {
     public Panel MainPanel { get; protected set; }
 
-    public ChapterWindow(Control parent)
+    public WindowChapter(Control parent)
     {
         MainPanel = new Panel();
         MainPanel.TabIndex = 0;

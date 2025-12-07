@@ -11,17 +11,17 @@ public partial class MyForm : Form
     }
     private void Enter_Click(object o, EventArgs e)
     {
-        if(!dateBaseConnector.SignIsWellDone(enterWindow.UserNameBox.Text, enterWindow.passwordBox.Text))
+        if(!_dateBaseConnector.SignIsWellDone(_enterWindow.UserNameBox.Text, _enterWindow.passwordBox.Text))
         {
             return;
         }
 
-        workDesk.ChangeName(enterWindow.UserNameBox.Text);
-        enterWindow.Close();
-        workDesk.Open();
-        arrayEditWindow.Open();
-        accEditorWindow.FillTextBoxes(dateBaseConnector.CurrentFirstName, dateBaseConnector.CurrentLastName,
-                                  dateBaseConnector.CurrentUserLogin, dateBaseConnector.CurrentPassword);
+        _workDesk.ChangeName(_enterWindow.UserNameBox.Text);
+        _enterWindow.Close();
+        _workDesk.Open();
+        _arrayEditWindow.Open();
+        _accEditorWindow.FillTextBoxes(_dateBaseConnector.CurrentFirstName, _dateBaseConnector.CurrentLastName,
+                                  _dateBaseConnector.CurrentUserLogin, _dateBaseConnector.CurrentPassword);
     }
     private void ExitFromProgramm_Click(object o, EventArgs e)
     {
@@ -29,62 +29,62 @@ public partial class MyForm : Form
     }
     private void NewAcc_Click(object o, EventArgs e)
     {
-        enterWindow.Close();
-        accCreatingWindow.Open();
+        _enterWindow.Close();
+        _accountCreatingWindow.Open();
     }
 
     private void ExitFromRegistration_Click(object o, EventArgs e)
     {
-        accCreatingWindow.Close();
-        enterWindow.Open();
+        _accountCreatingWindow.Close();
+        _enterWindow.Open();
     }
     private void Finish_Click(object o, EventArgs e)
     {
-        if (dateBaseConnector.AddUser(accCreatingWindow.LoginNameBox.Text,
-                                                      accCreatingWindow.PasswordBox.Text,
-                                                      accCreatingWindow.FirstNameBox.Text,
-                                                      accCreatingWindow.LastNameBox.Text)
-            && accCreatingWindow.PasswordBox.Text == accCreatingWindow.RepeatPasswordBox.Text)
+        if (_dateBaseConnector.AddUser(_accountCreatingWindow._loginNameBox.Text,
+                                                      _accountCreatingWindow.PasswordBox.Text,
+                                                      _accountCreatingWindow.FirstNameBox.Text,
+                                                      _accountCreatingWindow.LastNameBox.Text)
+            && _accountCreatingWindow.PasswordBox.Text == _accountCreatingWindow.RepeatPasswordBox.Text)
         {
-            workDesk.ChangeName(accCreatingWindow.LoginNameBox.Text);
-            accCreatingWindow.Close();
-            workDesk.Open();
-            arrayEditWindow.Open();
-            accEditorWindow.FillTextBoxes(dateBaseConnector.CurrentFirstName, dateBaseConnector.CurrentLastName,
-                                      dateBaseConnector.CurrentUserLogin, dateBaseConnector.CurrentPassword);
+            _workDesk.ChangeName(_accountCreatingWindow._loginNameBox.Text);
+            _accountCreatingWindow.Close();
+            _workDesk.Open();
+            _arrayEditWindow.Open();
+            _accEditorWindow.FillTextBoxes(_dateBaseConnector.CurrentFirstName, _dateBaseConnector.CurrentLastName,
+                                      _dateBaseConnector.CurrentUserLogin, _dateBaseConnector.CurrentPassword);
         }
     }
 
     private void NewArray_Click(object o, EventArgs e)
     {
-        workDesk.WorkField.Clear();
-        arrayEditor.ClearArray();
-        dateBaseConnector.CurrentArray = "";
+        _workDesk.WorkField.Clear();
+        _arrayEditor.ClearArray();
+        _dateBaseConnector.CurrentArray = "";
     }
     private void ExitFromAcc_Click(object o, EventArgs e)
     {
-        workDesk.Close();
-        enterWindow.Open();
+        _workDesk.Close();
+        _enterWindow.Open();
     }
     private void OpenArray_Click(object o, EventArgs e)
     {
-        openArrayWindow.Open();
-        workDesk.Close();
-        openArrayWindow.AddButtons(dateBaseConnector.UserArrays);
+        _openArrayWindow.Open();
+        _workDesk.Close();
+        _openArrayWindow.AddButtons(_dateBaseConnector.UserArrays);
     }
     private void SaveArray_Click(object o, EventArgs e)
     {
-        if (arrayEditor.AddNumbersFromString(workDesk.WorkField.Text))
+        if (_arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text))
         {
-            if (dateBaseConnector.CurrentArray.Length == 0)
+            if (_dateBaseConnector.CurrentArray.Length == 0)
             {
-                saveArrayAsWindow.Open();
-                workDesk.Close();
-                saveArrayAsWindow.AddButtons(dateBaseConnector.UserArrays);
+                _saveArrayAsWindow.Open();
+                _workDesk.Close();
+                _saveArrayAsWindow.AddButtons(_dateBaseConnector.UserArrays);
             }
             else
             {
-                if (dateBaseConnector.UpdateArray(arrayEditor.GetStringSourceArray(), dateBaseConnector.CurrentArray))
+                if (_dateBaseConnector.UpdateArray(_arrayEditor.GetStringSourceArray(), _dateBaseConnector.CurrentArray))
                 {
                     MessageBox.Show("The save is success!", "Info");
                 }
@@ -101,29 +101,29 @@ public partial class MyForm : Form
     }
     private void SaveArrayAs_Click(object o, EventArgs e)
     {
-        saveArrayAsWindow.Open();
-        workDesk.Close();
-        saveArrayAsWindow.AddButtons(dateBaseConnector.UserArrays);
+        _saveArrayAsWindow.Open();
+        _workDesk.Close();
+        _saveArrayAsWindow.AddButtons(_dateBaseConnector.UserArrays);
     }
     private void DeleteArray_Click(object o, EventArgs e)
     {
-        deleteArrayWindow.Open();
-        workDesk.Close();
-        deleteArrayWindow.AddButtons(dateBaseConnector.UserArrays);
+        _deleteArrayWindow.Open();
+        _workDesk.Close();
+        _deleteArrayWindow.AddButtons(_dateBaseConnector.UserArrays);
     }
 
     private void EnterToEditAcc_Click(object o, EventArgs e)
     {
         
-        accEditorWindow.Open();
-        workDesk.Close();
+        _accEditorWindow.Open();
+        _workDesk.Close();
     }
 
     private void ShowSortedArray_Click(object o, EventArgs e)
     {
-        if (arrayEditor.AddNumbersFromString(workDesk.WorkField.Text))
+        if (_arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text))
         {
-            workDesk.WorkField.Text = arrayEditor.GetStringSortedArray();
+            _workDesk.WorkField.Text = _arrayEditor.GetStringSortedArray();
         }
         else
         {
@@ -132,9 +132,9 @@ public partial class MyForm : Form
     }
     private void ShowSourceArray_Click(object o, EventArgs e)
     {
-        if (arrayEditor.AddNumbersFromString(workDesk.WorkField.Text))
+        if (_arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text))
         {
-            workDesk.WorkField.Text = arrayEditor.GetStringSourceArray();
+            _workDesk.WorkField.Text = _arrayEditor.GetStringSourceArray();
         }
         else
         {
@@ -146,17 +146,17 @@ public partial class MyForm : Form
         int firstLimit;
         int secondLimit;
         uint quantity;
-        if (int.TryParse(windowRandomNambers.firstLimitBox.Text, out firstLimit) &&
-            int.TryParse(windowRandomNambers.lastLimitBox.Text, out secondLimit) &&
-            uint.TryParse(windowRandomNambers.Quantity.Text, out quantity))
+        if (int.TryParse(_windowRandomNambers.firstLimitBox.Text, out firstLimit) &&
+            int.TryParse(_windowRandomNambers.lastLimitBox.Text, out secondLimit) &&
+            uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity))
         {
-            arrayEditor.AddRandomNumbers(quantity, firstLimit, secondLimit);
-            workDesk.WorkField.Text = arrayEditor.GetStringSourceArray();
-            windowRandomNambers.Close(); arrayEditWindow.Open();
+            _arrayEditor.AddRandomNumbers(quantity, firstLimit, secondLimit);
+            _workDesk.WorkField.Text = _arrayEditor.GetStringSourceArray();
+            _windowRandomNambers.Close(); _arrayEditWindow.Open();
         }
-        else if (!uint.TryParse(windowRandomNambers.Quantity.Text, out quantity) &&
-            (int.TryParse(windowRandomNambers.lastLimitBox.Text, out firstLimit) ||
-             int.TryParse(windowRandomNambers.firstLimitBox.Text, out secondLimit)))
+        else if (!uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity) &&
+            (int.TryParse(_windowRandomNambers.lastLimitBox.Text, out firstLimit) ||
+             int.TryParse(_windowRandomNambers.firstLimitBox.Text, out secondLimit)))
         {
             MessageBox.Show("¬ведено отрицательное количество!", "Error");
         }
@@ -167,43 +167,43 @@ public partial class MyForm : Form
     }
     private void DownloadArray_Click(object o, EventArgs e)
     {
-        workDesk.Close();
-        downloadArrayWindow.Open();
-        downloadArrayWindow.AddButtons(dateBaseConnector.UserArrays);
+        _workDesk.Close();
+        _downloadArrayWindow.Open();
+        _downloadArrayWindow.AddButtons(_dateBaseConnector.UserArrays);
     }
     private void Clear_Click(object o, EventArgs e)
     {
-        workDesk.WorkField.Clear();
+        _workDesk.WorkField.Clear();
     }
 
     private void OpenRandomNumberWindow_Click(object o, EventArgs e)
     {
-        arrayEditWindow.Close();
-        windowRandomNambers.Open();
+        _arrayEditWindow.Close();
+        _windowRandomNambers.Open();
     }
     private void ExitFormRandNumWindow_Click(object o, EventArgs e)
     {
-        windowRandomNambers.Close();
-        arrayEditWindow.Open();
+        _windowRandomNambers.Close();
+        _arrayEditWindow.Open();
     }
 
     private void ChoiceArrayForSave_Click(object o, EventArgs e)
     {
-        if (arrayEditor.AddNumbersFromString(workDesk.WorkField.Text))
+        if (_arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text))
         {
-            if (dateBaseConnector.AddArray(workDesk.WorkField.Text, saveArrayAsWindow.LastNameBox.Text))
+            if (_dateBaseConnector.AddArray(_workDesk.WorkField.Text, _saveArrayAsWindow.LastNameBox.Text))
             {
-                saveArrayAsWindow.Close();
-                workDesk.Open();
+                _saveArrayAsWindow.Close();
+                _workDesk.Open();
                 MessageBox.Show("New array was added!", "Info");
             }
             else
             {
-                if (dateBaseConnector.UpdateArray(workDesk.WorkField.Text, saveArrayAsWindow.LastNameBox.Text))
+                if (_dateBaseConnector.UpdateArray(_workDesk.WorkField.Text, _saveArrayAsWindow.LastNameBox.Text))
                 {
-                    saveArrayAsWindow.Close();
-                    workDesk.Open();
-                    MessageBox.Show("Array " + saveArrayAsWindow.LastNameBox.Text + " was added!", "Info");
+                    _saveArrayAsWindow.Close();
+                    _workDesk.Open();
+                    MessageBox.Show("Array " + _saveArrayAsWindow.LastNameBox.Text + " was added!", "Info");
                 }
                 else
                 {
@@ -218,23 +218,23 @@ public partial class MyForm : Form
     }
     private void CancelSaveArrayAs_Click(object o, EventArgs e)
     {
-        saveArrayAsWindow.Close();
-        workDesk.Open();
+        _saveArrayAsWindow.Close();
+        _workDesk.Open();
     }
 
     private void CancelOpenArray_Click(object o, EventArgs e)
     {
-        workDesk.Open();
-        openArrayWindow.Close();
+        _workDesk.Open();
+        _openArrayWindow.Close();
     }
     private void ChoiceArrayForOpen_Click(object o, EventArgs e)
     {
         string ArrayString;
-        if (dateBaseConnector.GetArrayFromDB(out ArrayString, openArrayWindow.LastNameBox.Text))
+        if (_dateBaseConnector.GetArrayFromDB(out ArrayString, _openArrayWindow.LastNameBox.Text))
         {
-            workDesk.WorkField.Text = ArrayString;
-            openArrayWindow.Close();
-            workDesk.Open();
+            _workDesk.WorkField.Text = ArrayString;
+            _openArrayWindow.Close();
+            _workDesk.Open();
             MessageBox.Show("Operation is success!", "Info");
         }
         else
@@ -247,11 +247,11 @@ public partial class MyForm : Form
     private void ChoiceArrayForDownload_Click(object o, EventArgs e)
     {
         string ArrayString;
-        if (dateBaseConnector.GetArrayFromDB(out ArrayString, downloadArrayWindow.LastNameBox.Text))
+        if (_dateBaseConnector.GetArrayFromDB(out ArrayString, _downloadArrayWindow.LastNameBox.Text))
         {
-            workDesk.WorkField.Text += ArrayString;
-            openArrayWindow.Close();
-            workDesk.Open();
+            _workDesk.WorkField.Text += ArrayString;
+            _openArrayWindow.Close();
+            _workDesk.Open();
             MessageBox.Show("Operation is success!", "Info");
         }
         else
@@ -261,16 +261,16 @@ public partial class MyForm : Form
     }
     private void CancelDownloadArray_Click(object o, EventArgs e)
     {
-        workDesk.Open();
-        downloadArrayWindow.Close();
+        _workDesk.Open();
+        _downloadArrayWindow.Close();
     }
 
     private void ChoiceArrayForDelete_Click(object o, EventArgs e)
     {
-        if (dateBaseConnector.DeleteArray(deleteArrayWindow.LastNameBox.Text))
+        if (_dateBaseConnector.DeleteArray(_deleteArrayWindow.LastNameBox.Text))
         {
-            deleteArrayWindow.Close();
-            workDesk.Open();
+            _deleteArrayWindow.Close();
+            _workDesk.Open();
             MessageBox.Show("Operation is success!", "Info");
         }
         else
@@ -280,25 +280,25 @@ public partial class MyForm : Form
     }
     private void CancelDeleteArray_Click(object o, EventArgs e)
     {
-        deleteArrayWindow.Close();
-        workDesk.Open();
+        _deleteArrayWindow.Close();
+        _workDesk.Open();
     }
 
     private void BackToWorkDesk_Click(object o, EventArgs e)
     {
-        accEditorWindow.FillTextBoxes(dateBaseConnector.CurrentFirstName, dateBaseConnector.CurrentLastName,
-                                      dateBaseConnector.CurrentUserLogin, dateBaseConnector.CurrentPassword);
-        workDesk.Open();
-        accEditorWindow.Close();
+        _accEditorWindow.FillTextBoxes(_dateBaseConnector.CurrentFirstName, _dateBaseConnector.CurrentLastName,
+                                      _dateBaseConnector.CurrentUserLogin, _dateBaseConnector.CurrentPassword);
+        _workDesk.Open();
+        _accEditorWindow.Close();
     }
     private void Apply_Click(object o, EventArgs e)
     {
-        if(dateBaseConnector.ChangeUserData(dateBaseConnector.CurrentUserLogin, accEditorWindow.FirstNameTextBox.Text, 
-            accEditorWindow.LastNameTextBox.Text, accEditorWindow.LoginTextBox.Text, accEditorWindow.PasswordTextBox.Text))
+        if(_dateBaseConnector.ChangeUserData(_dateBaseConnector.CurrentUserLogin, _accEditorWindow.FirstNameTextBox.Text, 
+            _accEditorWindow.LastNameTextBox.Text, _accEditorWindow.LoginTextBox.Text, _accEditorWindow.PasswordTextBox.Text))
         {
-            accEditorWindow.Close();
-            workDesk.Open();
-            workDesk.ChangeName(dateBaseConnector.CurrentUserLogin);
+            _accEditorWindow.Close();
+            _workDesk.Open();
+            _workDesk.ChangeName(_dateBaseConnector.CurrentUserLogin);
             MessageBox.Show("Operation is success!", "Info");
         }
         else
@@ -308,10 +308,10 @@ public partial class MyForm : Form
     }
     private void DeleteAcc_Click(object o, EventArgs e)
     {
-        if(dateBaseConnector.DeleteUser(dateBaseConnector.CurrentUserLogin))
+        if(_dateBaseConnector.DeleteUser(_dateBaseConnector.CurrentUserLogin))
         {
-            accEditorWindow.Close();
-            enterWindow.Open();
+            _accEditorWindow.Close();
+            _enterWindow.Open();
             MessageBox.Show("Operation is success!", "Info");
         }
         else
