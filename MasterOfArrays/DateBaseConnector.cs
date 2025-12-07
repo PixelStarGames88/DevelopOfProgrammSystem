@@ -58,7 +58,7 @@ public class DateBaseConnector
 
     public bool AddUser(string login, string password, string firstName, string lastName)
     {
-        if (login.Length == 0 || password.Length == 0 || firstName.Length == 0 || lastName.Length == 0) return false;
+        if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password)) return false;
 
         string connectionString = $"Data Source={_dbPath}";
         using var connection = new SqliteConnection(connectionString);

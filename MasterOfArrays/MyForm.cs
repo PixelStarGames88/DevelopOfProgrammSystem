@@ -86,11 +86,12 @@ public partial class MyForm : Form
         }
 
         _workDesk.ChangeName(_accountCreatingWindow._loginNameBox.Text);
+        _accEditorWindow.FillTextBoxes(_dateBaseConnector.CurrentFirstName, _dateBaseConnector.CurrentLastName,
+                                      _dateBaseConnector.CurrentUserLogin, _dateBaseConnector.CurrentPassword);
         _accountCreatingWindow.Close();
         _workDesk.Open();
         _arrayEditWindow.Open();
-        _accEditorWindow.FillTextBoxes(_dateBaseConnector.CurrentFirstName, _dateBaseConnector.CurrentLastName,
-                                      _dateBaseConnector.CurrentUserLogin, _dateBaseConnector.CurrentPassword);
+        
     }
 
     private void NewArray_Click(object o, EventArgs e)
