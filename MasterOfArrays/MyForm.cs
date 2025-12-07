@@ -40,19 +40,18 @@ public partial class MyForm : Form
     }
     private void Finish_Click(object o, EventArgs e)
     {
-        if (_dateBaseConnector.AddUser(_accountCreatingWindow._loginNameBox.Text,
-                                                      _accountCreatingWindow.PasswordBox.Text,
-                                                      _accountCreatingWindow.FirstNameBox.Text,
-                                                      _accountCreatingWindow.LastNameBox.Text)
-            && _accountCreatingWindow.PasswordBox.Text == _accountCreatingWindow.RepeatPasswordBox.Text)
-        {
-            _workDesk.ChangeName(_accountCreatingWindow._loginNameBox.Text);
-            _accountCreatingWindow.Close();
-            _workDesk.Open();
-            _arrayEditWindow.Open();
-            _accEditorWindow.FillTextBoxes(_dateBaseConnector.CurrentFirstName, _dateBaseConnector.CurrentLastName,
+        if (_accountCreatingWindow.PasswordBox.Text != _accountCreatingWindow.RepeatPasswordBox.Text) return;
+        if (!(_dateBaseConnector.AddUser(_accountCreatingWindow._loginNameBox.Text,
+                                       _accountCreatingWindow.PasswordBox.Text,
+                                       _accountCreatingWindow.FirstNameBox.Text,
+                                       _accountCreatingWindow.LastNameBox.Text)))
+                                       { return; }
+        _workDesk.ChangeName(_accountCreatingWindow._loginNameBox.Text);
+        _accountCreatingWindow.Close();
+        _workDesk.Open();
+        _arrayEditWindow.Open();
+        _accEditorWindow.FillTextBoxes(_dateBaseConnector.CurrentFirstName, _dateBaseConnector.CurrentLastName,
                                       _dateBaseConnector.CurrentUserLogin, _dateBaseConnector.CurrentPassword);
-        }
     }
 
     private void NewArray_Click(object o, EventArgs e)
