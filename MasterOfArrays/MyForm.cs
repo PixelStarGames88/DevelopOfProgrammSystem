@@ -96,6 +96,20 @@ public partial class MyForm : Form
 
     private void NewArray_Click(object o, EventArgs e)
     {
+        if(!string.IsNullOrEmpty(_workDesk.WorkField.Text))
+        {
+            MessageBoxButtons button = MessageBoxButtons.YesNoCancel;
+            DialogResult result = MessageBox.Show("Do you want to save your array?", "Message", button);
+            if(result == DialogResult.Yes)
+            {
+                SaveArray_Click(o, e);
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                return;
+            }
+        }
+
         _workDesk.WorkField.Clear();
         _arrayEditor.ClearArray();
         _dateBaseConnector.CurrentArray = "";
@@ -165,7 +179,7 @@ public partial class MyForm : Form
         }
         else
         {
-            MessageBox.Show("¬веден не подход€щий формат!", "Error");
+            MessageBox.Show("Format is not correct!", "Error");
         }
     }
     private void ShowSourceArray_Click(object o, EventArgs e)
@@ -176,7 +190,7 @@ public partial class MyForm : Form
         }
         else
         {
-            MessageBox.Show("¬веден не подход€щий формат!", "Error");
+            MessageBox.Show("Format is not correct!", "Error");
         }
     }
     private void FillRandomNumber_Click(object o, EventArgs e)
@@ -212,6 +226,7 @@ public partial class MyForm : Form
     private void Clear_Click(object o, EventArgs e)
     {
         _workDesk.WorkField.Clear();
+        _arrayEditor.ClearArray();
     }
 
     private void OpenRandomNumberWindow_Click(object o, EventArgs e)
@@ -239,6 +254,7 @@ public partial class MyForm : Form
             {
                 if (_dateBaseConnector.UpdateArray(_workDesk.WorkField.Text, _saveArrayAsWindow.LastNameBox.Text))
                 {
+                    MessageBox.Show("Array " + _saveArrayAsWindow.LastNameBox.Text + " was added!", "Info");
                     _saveArrayAsWindow.Close();
                     _workDesk.Open();
                 }
@@ -255,6 +271,7 @@ public partial class MyForm : Form
     }
     private void CancelSaveArrayAs_Click(object o, EventArgs e)
     {
+
         _saveArrayAsWindow.Close();
         _workDesk.Open();
     }
@@ -266,6 +283,17 @@ public partial class MyForm : Form
     }
     private void ChoiceArrayForOpen_Click(object o, EventArgs e)
     {
+        MessageBoxButtons button = MessageBoxButtons.YesNoCancel;
+        DialogResult result = MessageBox.Show("Do you want to save your array?", "Message", button);
+        if (result == DialogResult.Yes)
+        {
+            SaveArray_Click(o, e);
+        }
+        else if (result == DialogResult.Cancel)
+        {
+            return;
+        }
+
         string ArrayString;
         if (_dateBaseConnector.GetArrayFromDB(out ArrayString, _openArrayWindow.LastNameBox.Text))
         {
@@ -330,18 +358,27 @@ public partial class MyForm : Form
     }
     private void Apply_Click(object o, EventArgs e)
     {
-        if(_dateBaseConnector.ChangeUserData(_dateBaseConnector.CurrentUserLogin, _accEditorWindow.FirstNameTextBox.Text, 
+        if(!_dateBaseConnector.ChangeUserData(_dateBaseConnector.CurrentUserLogin, _accEditorWindow.FirstNameTextBox.Text, 
             _accEditorWindow.LastNameTextBox.Text, _accEditorWindow.LoginTextBox.Text, _accEditorWindow.PasswordTextBox.Text))
         {
-            _accEditorWindow.Close();
-            _workDesk.Open();
-            _workDesk.ChangeName(_dateBaseConnector.CurrentUserLogin);
-            MessageBox.Show("Operation is success!", "Info");
+            if(string.IsNullOrEmpty(_accEditorWindow.PasswordTextBox.Text))
+            {
+                MessageBox.Show("Field of password is empty!", "Error");
+            }
+            else if (string.IsNullOrEmpty(_accEditorWindow.LoginTextBox.Text))
+            {
+                MessageBox.Show("Field of login is empty!", "Error");
+            }
+            else
+            {
+                MessageBox.Show("Account with same login already exists!", "Error");
+            }
+            return;
         }
-        else
-        {
-            MessageBox.Show("Operation is not success!", "Info");
-        }
+        _accEditorWindow.Close();
+        _workDesk.Open();
+        _workDesk.ChangeName(_dateBaseConnector.CurrentUserLogin);
+        MessageBox.Show("Operation is success!", "Info");
     }
     private void DeleteAcc_Click(object o, EventArgs e)
     {

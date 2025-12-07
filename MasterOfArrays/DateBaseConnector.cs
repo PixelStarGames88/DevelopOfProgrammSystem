@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.Sqlite;
 using System.Data;
+using System.Xml;
 using System.Xml.Linq;
 
 namespace MasterOfArrays;
@@ -48,7 +49,7 @@ public class DateBaseConnector
             Array_Unique_Name TEXT,
             User_ID TEXT,
             Array_Body TEXT,
-            FOREIGN KEY (User_ID) REFERENCES Users(User_Login) ON UPDATE CASCADE,
+            FOREIGN KEY (User_ID) REFERENCES Users(User_Login) ON UPDATE CASCADE ON DELETE CASCADE,
             PRIMARY KEY(User_ID, Array_Unique_Name)
         );";
 
@@ -77,6 +78,12 @@ public class DateBaseConnector
         try
         {
             InsertCmd.ExecuteNonQuery();
+
+            CurrentFirstName = firstName;
+            CurrentLastName = lastName;
+            CurrentPassword = password; 
+            CurrentUserLogin = login;
+
             return true;
         }
         catch
@@ -111,7 +118,7 @@ public class DateBaseConnector
     }
     public bool ChangeUserData(string currentligin, string firstName, string lastName, string login, string password)
     {
-        if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName)) return false;
+        if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password)) return false;
 
         using var connection = new SqliteConnection($"Data Source={_dbPath}");
         connection.Open();
