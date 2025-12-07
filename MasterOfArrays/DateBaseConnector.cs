@@ -22,12 +22,6 @@ public class DateBaseConnector
         CurrentPassword = "";
         UserArrays = new Dictionary<string, string>();
 
-        //string appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-        //string dbFolder = Path.Combine(appData, "MasterOfArrays");
-        //_dbPath = Path.Combine(dbFolder, "app.db");
-
-        //Directory.CreateDirectory(dbFolder);
-
         _dbPath = "app.db";
         CreateDataBaseIfNoExist();
     }
@@ -136,25 +130,20 @@ public class DateBaseConnector
         ChangeCmd.Parameters.AddWithValue("$secondName", lastName);
         ChangeCmd.Parameters.AddWithValue("$login", login);
         ChangeCmd.Parameters.AddWithValue("$passowrd", password);
-        //*
         try
         {
-        //*/
             ChangeCmd.ExecuteNonQuery();
             CurrentUserLogin = login;
             CurrentFirstName = firstName;
             CurrentLastName = lastName;
             CurrentPassword = password;
             return true;
-        //*
        }
        catch
        {
            return false; 
        }
-        //*/
     }
-    //*
     public bool SignIsWellDone(string login, string password)
     {
         using var connection = new SqliteConnection($"Data Source={_dbPath}");
@@ -184,7 +173,6 @@ public class DateBaseConnector
         }
         return false;
     }
-    //*/
     private void FoundArrays()
     {
         UserArrays.Clear();
