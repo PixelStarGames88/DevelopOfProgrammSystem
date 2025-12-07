@@ -13,6 +13,18 @@ public partial class MyForm : Form
     {
         if(!_dateBaseConnector.SignIsWellDone(_enterWindow.UserNameBox.Text, _enterWindow.passwordBox.Text))
         {
+            if(string.IsNullOrEmpty(_enterWindow.UserNameBox.Text))
+            {
+                MessageBox.Show("Field of login is empty!", "Error");
+            }
+            else if (string.IsNullOrEmpty(_enterWindow.passwordBox.Text))
+            {
+                MessageBox.Show("Field of password is empty!", "Error");
+            }
+            else
+            {
+                MessageBox.Show("Password or login is not correct!", "Error");
+            }
             return;
         }
 
@@ -40,12 +52,39 @@ public partial class MyForm : Form
     }
     private void Finish_Click(object o, EventArgs e)
     {
-        if (_accountCreatingWindow.PasswordBox.Text != _accountCreatingWindow.RepeatPasswordBox.Text) return;
+        if (_accountCreatingWindow.PasswordBox.Text != _accountCreatingWindow.RepeatPasswordBox.Text)
+        {
+            if(string.IsNullOrEmpty(_accountCreatingWindow.RepeatPasswordBox.Text))
+            {
+                MessageBox.Show("Repeat password!", "Error");
+            }
+            else
+            {
+                MessageBox.Show("Repeat password correctly!", "Error");
+            }
+                
+            return; 
+        }
         if (!(_dateBaseConnector.AddUser(_accountCreatingWindow._loginNameBox.Text,
                                        _accountCreatingWindow.PasswordBox.Text,
                                        _accountCreatingWindow.FirstNameBox.Text,
                                        _accountCreatingWindow.LastNameBox.Text)))
-                                       { return; }
+        {
+            if(string.IsNullOrEmpty(_accountCreatingWindow._loginNameBox.Text))
+            {
+                MessageBox.Show("Enter login!", "Error");
+            }
+            else if (string.IsNullOrEmpty(_accountCreatingWindow.PasswordBox.Text))
+            {
+                MessageBox.Show("Enter password!", "Error");
+            }
+            else
+            {
+                MessageBox.Show("Account with same login already exists!", "Error");
+            }  
+            return; 
+        }
+
         _workDesk.ChangeName(_accountCreatingWindow._loginNameBox.Text);
         _accountCreatingWindow.Close();
         _workDesk.Open();
