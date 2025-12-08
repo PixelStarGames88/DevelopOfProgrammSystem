@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\UnitTest.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\unittest1\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\UnitTest.csproj|solutionrelative:unittest1\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\UnitTest.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\unittest1\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\UnitTest.csproj|solutionrelative:unittest1\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "UnitTest1\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\MSTestSettings.cs",
+              "RelativeToolTip": "UnitTest1\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T14:53:50.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Constants.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\Constants.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Constants.cs",
+              "RelativeToolTip": "MasterOfArrays\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T14:53:42.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\Test.cs",
+              "RelativeDocumentMoniker": "UnitTest1\\Test.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\Test.cs",
+              "RelativeToolTip": "UnitTest1\\Test.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T14:42:14.806Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
