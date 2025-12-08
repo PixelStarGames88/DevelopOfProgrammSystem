@@ -37,7 +37,11 @@ public class ArrayEditor
         ClearArray();
         try
         {
-            foreach (int number in Numbers.Split(' ').Select(x => Convert.ToInt32(x)).ToArray()) _originalArray.Add(number);
+            foreach (int number in Numbers.Split(' ').Select(x => Convert.ToInt32(x)).ToArray())
+            { 
+                if (_originalArray.Count > Constants.QUANTITY_LIMIT) break;
+                _originalArray.Add(number);
+            }
             SortArray();
             return true;
         }

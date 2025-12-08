@@ -93,7 +93,6 @@ public partial class MyForm : Form
         _arrayEditWindow.Open();
         
     }
-
     private void NewArray_Click(object o, EventArgs e)
     {
         if(!string.IsNullOrEmpty(_workDesk.WorkField.Text))
@@ -209,7 +208,7 @@ public partial class MyForm : Form
             int.TryParse(_windowRandomNambers.lastLimitBox.Text, out secondLimit) &&
             uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity)))
         {
-            MessageBox.Show("Enter number!", "Error");
+            MessageBox.Show("Enter integer number!", "Error");
             return;
         }
         else if (!uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity) &&
@@ -217,6 +216,16 @@ public partial class MyForm : Form
              int.TryParse(_windowRandomNambers.firstLimitBox.Text, out secondLimit)))
         {
             MessageBox.Show("Enter positive number!", "Error");
+            return;
+        }
+        else if(Math.Abs(firstLimit) > Constants.NUMBER_IN_ARRAY_LIMIT || Math.Abs(secondLimit) > Constants.NUMBER_IN_ARRAY_LIMIT)
+        {
+            MessageBox.Show("Absolute numbers cannot be more than " + Constants.QUANTITY_LIMIT +"!", "Error");
+            return;
+        }
+        else if(quantity + _arrayEditor.GetArray.Length > Constants.QUANTITY_LIMIT)
+        {
+            MessageBox.Show("You can add only " + (Constants.QUANTITY_LIMIT - _arrayEditor.GetArray.Length) + " numbers!", "Error");
             return;
         }
         _arrayEditor.AddRandomNumbers(quantity, firstLimit, secondLimit);
