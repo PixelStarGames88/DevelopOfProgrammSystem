@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "m95enTwEFDQ=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\UnitTest.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект MasterOfArrays несовместим с net10.0 (.NETCoreApp,Version=v10.0). Проект MasterOfArrays поддерживает: net10.0-windows7.0 (.NETCoreApp,Version=v10.0)",
+      "projectPath": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\UnitTest.csproj",
+      "filePath": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\UnitTest.csproj",
+      "libraryId": "MasterOfArrays",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

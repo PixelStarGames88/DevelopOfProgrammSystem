@@ -1,18 +1,16 @@
 ﻿using Microsoft.Data.Sqlite;
 using System.Data;
-using System.Xml;
-using System.Xml.Linq;
 
 namespace MasterOfArrays;
 
 public class DateBaseConnector
 {
     private readonly string _dbPath;
-    public string CurrentUserLogin {  get; private set; }
+    public string CurrentUserLogin { get; private set; }
     public string CurrentPassword { get; private set; }
     public string CurrentFirstName { get; private set; }
     public string CurrentLastName { get; private set; }
-    public string CurrentArray {  get; set; }
+    public string CurrentArray { get; set; }
     public Dictionary<string, string> UserArrays { get; private set; }
     public DateBaseConnector()
     {
@@ -81,7 +79,7 @@ public class DateBaseConnector
 
             CurrentFirstName = firstName;
             CurrentLastName = lastName;
-            CurrentPassword = password; 
+            CurrentPassword = password;
             CurrentUserLogin = login;
 
             return true;
@@ -113,7 +111,7 @@ public class DateBaseConnector
         }
         catch
         {
-            return false; 
+            return false;
         }
     }
     public bool ChangeUserData(string currentligin, string firstName, string lastName, string login, string password)
@@ -145,11 +143,11 @@ public class DateBaseConnector
             CurrentLastName = lastName;
             CurrentPassword = password;
             return true;
-       }
-       catch
-       {
-           return false; 
-       }
+        }
+        catch
+        {
+            return false;
+        }
     }
     public bool SignIsWellDone(string login, string password)
     {
