@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\windowaccountcreating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\windowaccountcreating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyForm.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\MyForm.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.cs",
+              "RelativeToolTip": "MasterOfArrays\\MyForm.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAwNwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T06:45:36.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WindowAccountCreating.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowAccountCreating.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\WindowAccountCreating.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowAccountCreating.cs",
+              "RelativeToolTip": "MasterOfArrays\\WindowAccountCreating.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAwwAUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T19:38:32.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Program.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\Program.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Program.cs",
+              "RelativeToolTip": "MasterOfArrays\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T19:38:31.344Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -198,24 +198,30 @@ public partial class MyForm : Form
         int firstLimit;
         int secondLimit;
         uint quantity;
-        if (int.TryParse(_windowRandomNambers.firstLimitBox.Text, out firstLimit) &&
-            int.TryParse(_windowRandomNambers.lastLimitBox.Text, out secondLimit) &&
-            uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity))
+        if(string.IsNullOrEmpty(_windowRandomNambers.firstLimitBox.Text) || 
+           string.IsNullOrEmpty(_windowRandomNambers.lastLimitBox.Text) ||
+           string.IsNullOrEmpty(_windowRandomNambers.Quantity.Text))
         {
-            _arrayEditor.AddRandomNumbers(quantity, firstLimit, secondLimit);
-            _workDesk.WorkField.Text = _arrayEditor.GetStringSourceArray();
-            _windowRandomNambers.Close(); _arrayEditWindow.Open();
+            MessageBox.Show("Fill empty fields!", "Error");
+            return;
+        }
+        else if (!(int.TryParse(_windowRandomNambers.firstLimitBox.Text, out firstLimit) &&
+            int.TryParse(_windowRandomNambers.lastLimitBox.Text, out secondLimit) &&
+            uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity)))
+        {
+            MessageBox.Show("Enter number!", "Error");
+            return;
         }
         else if (!uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity) &&
             (int.TryParse(_windowRandomNambers.lastLimitBox.Text, out firstLimit) ||
              int.TryParse(_windowRandomNambers.firstLimitBox.Text, out secondLimit)))
         {
-            MessageBox.Show("¬ведено отрицательное количество!", "Error");
+            MessageBox.Show("Enter positive number!", "Error");
+            return;
         }
-        else
-        {
-            MessageBox.Show("¬ведены не целые числа!", "Error");
-        }
+        _arrayEditor.AddRandomNumbers(quantity, firstLimit, secondLimit);
+        _workDesk.WorkField.Text = _arrayEditor.GetStringSourceArray();
+        _windowRandomNambers.Close(); _arrayEditWindow.Open();
     }
     private void DownloadArray_Click(object o, EventArgs e)
     {
@@ -304,7 +310,8 @@ public partial class MyForm : Form
         string ArrayString;
         if (_dateBaseConnector.GetArrayFromDB(out ArrayString, _downloadArrayWindow.LastNameBox.Text))
         {
-            _workDesk.WorkField.Text += ArrayString;
+            _workDesk.WorkField.Text = _workDesk.WorkField.Text + ArrayString;
+            _arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text);
             _openArrayWindow.Close();
             _workDesk.Open();
             MessageBox.Show("Operation is success!", "Info");
