@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MasterOfArrays")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28496fe2560be7f8f7a879760683679c2c514a02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41a7bb7cd698e28ac8ea5bc3b3533d8edcda57de")]
 [assembly: System.Reflection.AssemblyProductAttribute("MasterOfArrays")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MasterOfArrays")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
