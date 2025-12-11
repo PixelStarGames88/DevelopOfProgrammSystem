@@ -10,11 +10,10 @@ public class DateBaseConnector
     public string CurrentPassword { get; private set; }
     public string CurrentFirstName { get; private set; }
     public string CurrentLastName { get; private set; }
-    public string CurrentArray { get; set; }
+    public string CurrentArray { get; set; } = null!;
     public Dictionary<string, string> UserArrays { get; private set; }
     public DateBaseConnector()
     {
-        CurrentArray = "";
         CurrentUserLogin = "";
         CurrentFirstName = "";
         CurrentLastName = "";

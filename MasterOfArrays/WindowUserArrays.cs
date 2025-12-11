@@ -108,6 +108,8 @@ public class WindowUserArrays : WindowChapter
     }
     public void AddButtons(Dictionary<string, string> arrays)
     {
+        _arraysPanel.Controls.Clear();
+        _arrayChoiseButtons.Clear();    
         if(arrays.Keys.Count == 0) _emptyLabel.Visible = true;
         else
         {

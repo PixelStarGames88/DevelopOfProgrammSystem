@@ -1,75 +1,70 @@
 ﻿using MasterOfArrays;
+using System;
 namespace UnitTest;
 
 [TestClass]
 public sealed class Test
 {
-    [TestMethod]
-    public void TestMethod()
+    DateBaseConnector dbConnector = null!;
+    Random random = null!;
+    ArrayEditor arrayEditor = null!;
+
+    [TestInitialize]
+    public void TestSetup()
     {
-        var dbConnector = new DateBaseConnector();
-        dbConnector.AddUser("testUser_1", "100", "", "");
-        dbConnector.AddUser("testUser_2", "1000", "", "");
-        dbConnector.AddUser("testUser_3", "10000", "", "");
+        arrayEditor = new ArrayEditor();
+        dbConnector = new DateBaseConnector();
+        random = new Random();
 
-        ArrayEditor arrayEditor = new ArrayEditor();
+        dbConnector.DeleteUser("testUser");
+        dbConnector.AddUser("testUser", "100", "", "");
+        dbConnector.SignIsWellDone("testUser", "100");
+    }
+    public bool UserTest(int quantity)
+    {
+        
+        int count = 0;
+        for (int i = 0; i < quantity; i++)
+        {
+            
+            arrayEditor.AddRandomNumbers((uint)random.Next(0, Constants.QUANTITY_LIMIT),
+                                     random.Next(-Constants.NUMBER_IN_ARRAY_LIMIT, Constants.NUMBER_IN_ARRAY_LIMIT),
+                                     random.Next(-Constants.NUMBER_IN_ARRAY_LIMIT, Constants.NUMBER_IN_ARRAY_LIMIT));
+            if (dbConnector.AddArray(arrayEditor.GetStringSourceArray(), ("Array" + i))) count++;
+            arrayEditor.ClearArray();   
+        }
+        for(int i = 0; i < quantity; ++i)
+        {
+            string array;
+            if(dbConnector.GetArrayFromDB(out array, ("Array" + i))) count++;
+        }
+        for( int i = 0; i < quantity; i++)
+        {
+            if(dbConnector.DeleteArray("Array" + i)) count++;
 
-        dbConnector.SignIsWellDone("testUser_1", "100");
-        for (int i = 0; i < 100; i++)
-        {
-            Assert.IsTrue(dbConnector.AddArray("1 1 1 2", ("Array" + i)));
         }
-        dbConnector.SignIsWellDone("testUser_2", "1000");
-        for (int i = 0; i < 1000; i++)
-        {
-            Assert.IsTrue(dbConnector.AddArray("1 1 1 2", ("Array" + i)));
-        }
-        dbConnector.SignIsWellDone("testUser_3", "10000");
-        for (int i = 0; i < 10000; i++)
-        {
-            Assert.IsTrue(dbConnector.AddArray("1 1 2", ("Array" + i)));
-        }
+        return count == quantity * 3;
+    }
 
-        dbConnector.SignIsWellDone("testUser_1", "100");
-        arrayEditor.ClearArray();
-        for (int i = 0; i < 100; i++)
-        {
-            string ArrayString;
-            Assert.IsTrue(dbConnector.GetArrayFromDB(out ArrayString, ("Array" + i)));
-            Assert.IsTrue(arrayEditor.AddNumbersFromString(ArrayString));
-        }
-        dbConnector.SignIsWellDone("testUser_2", "1000");
-        arrayEditor.ClearArray();
-        for (int i = 0; i < 1000; i++)
-        {
-            string ArrayString;
-            Assert.IsTrue(dbConnector.GetArrayFromDB(out ArrayString, ("Array" + i)));
-            Assert.IsTrue(arrayEditor.AddNumbersFromString(ArrayString));
-        }
-        dbConnector.SignIsWellDone("testUser_3", "10000");
-        arrayEditor.ClearArray();
-        for (int i = 0; i < 10000; i++)
-        {
-            string ArrayString;
-            Assert.IsTrue(dbConnector.GetArrayFromDB(out ArrayString, ("Array" + i)));
-            Assert.IsTrue(arrayEditor.AddNumbersFromString(ArrayString));
-        }
-        arrayEditor.ClearArray();
+    [TestCleanup]
+    public void TestTeardown()
+    {
+        dbConnector.DeleteUser("testUser");
+    }
 
-        dbConnector.SignIsWellDone("testUser_1", "100");
-        for (int i = 0; i < 100; i++)
-        {
-            Assert.IsTrue(dbConnector.DeleteArray("Array" + i));
-        }
-        dbConnector.SignIsWellDone("testUser_2", "1000");
-        for (int i = 0; i < 1000; i++)
-        {
-            Assert.IsTrue(dbConnector.DeleteArray("Array" + i));
-        }
-        dbConnector.SignIsWellDone("testUser_3", "10000");
-        for (int i = 0; i < 10000; i++)
-        {
-            Assert.IsTrue(dbConnector.DeleteArray("Array" + i));
-        }
+    [TestMethod]
+    public void TestMethodWithHundriedArrays()
+    {
+        Assert.IsTrue(UserTest(100));
+    }
+    [TestMethod]
+    public void TestMethodWithThouthendArrays()
+    {
+        Assert.IsTrue(UserTest(1000));
+    }
+    [TestMethod]
+    public void TestMethodWithTenThouthendArrays()
+    {
+        Assert.IsTrue(UserTest(10000));
     }
 }

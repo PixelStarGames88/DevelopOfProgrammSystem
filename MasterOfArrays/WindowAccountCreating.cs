@@ -4,7 +4,7 @@ public class WindowAccountCreating : WindowChapter
 {
     public TextBox RepeatPasswordBox { get; private set; } = null!;
     public TextBox PasswordBox { get; private set; } = null!;
-    public TextBox _loginNameBox { get; private set; } = null!;
+    public TextBox LoginNameBox { get; private set; } = null!;
     public TextBox LastNameBox { get; private set; } = null!;
     public TextBox FirstNameBox { get; private set; } = null!;
     private Label _firstNameLabel = null!;
@@ -27,7 +27,7 @@ public class WindowAccountCreating : WindowChapter
         _passwordLabel = new Label();
         PasswordBox = new TextBox();
         _loginLabel = new Label();
-        _loginNameBox = new TextBox();
+        LoginNameBox = new TextBox();
         _lastNameLabel = new Label();
         LastNameBox = new TextBox();
         _finishButton = new Button();
@@ -52,7 +52,7 @@ public class WindowAccountCreating : WindowChapter
         MainPanel.Controls.Add(_passwordLabel);
         MainPanel.Controls.Add(PasswordBox);
         MainPanel.Controls.Add(_loginLabel);
-        MainPanel.Controls.Add(_loginNameBox);
+        MainPanel.Controls.Add(LoginNameBox);
         MainPanel.Controls.Add(_lastNameLabel);
         MainPanel.Controls.Add(LastNameBox);
         MainPanel.Controls.Add(_finishButton);
@@ -121,16 +121,16 @@ public class WindowAccountCreating : WindowChapter
         _loginLabel.TabIndex = 15;
         _loginLabel.Text = "Login";
         // 
-        // _loginNameBox
+        // LoginNameBox
         // 
-        _loginNameBox.BackColor = Color.Black;
-        _loginNameBox.BorderStyle = BorderStyle.FixedSingle;
-        _loginNameBox.Font = new Font("Old English Text MT", 13F);
-        _loginNameBox.ForeColor = Color.White;
-        _loginNameBox.Location = new Point(428, 107);
-        _loginNameBox.Name = "LoginNameBox";
-        _loginNameBox.Size = new Size(297, 34);
-        _loginNameBox.TabIndex = 16;
+        LoginNameBox.BackColor = Color.Black;
+        LoginNameBox.BorderStyle = BorderStyle.FixedSingle;
+        LoginNameBox.Font = new Font("Old English Text MT", 13F);
+        LoginNameBox.ForeColor = Color.White;
+        LoginNameBox.Location = new Point(428, 107);
+        LoginNameBox.Name = "LoginNameBox";
+        LoginNameBox.Size = new Size(297, 34);
+        LoginNameBox.TabIndex = 16;
         // 
         // _lastNameLabel
         // 
@@ -204,7 +204,7 @@ public class WindowAccountCreating : WindowChapter
     {
         LastNameBox.Clear();
         FirstNameBox.Clear();
-        _loginNameBox.Clear();
+        LoginNameBox.Clear();
         PasswordBox.Clear();
         RepeatPasswordBox.Clear();
         base.Close();

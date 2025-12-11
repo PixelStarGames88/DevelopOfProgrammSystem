@@ -11,13 +11,13 @@ public partial class MyForm : Form
     }
     private void Enter_Click(object o, EventArgs e)
     {
-        if(!_dateBaseConnector.SignIsWellDone(_enterWindow.UserNameBox.Text, _enterWindow.passwordBox.Text))
+        if(!_dateBaseConnector.SignIsWellDone(_enterWindow.UserNameBox.Text, _enterWindow.PasswordBox.Text))
         {
             if(string.IsNullOrEmpty(_enterWindow.UserNameBox.Text))
             {
                 MessageBox.Show("Field of login is empty!", "Error");
             }
-            else if (string.IsNullOrEmpty(_enterWindow.passwordBox.Text))
+            else if (string.IsNullOrEmpty(_enterWindow.PasswordBox.Text))
             {
                 MessageBox.Show("Field of password is empty!", "Error");
             }
@@ -65,12 +65,12 @@ public partial class MyForm : Form
                 
             return; 
         }
-        if (!(_dateBaseConnector.AddUser(_accountCreatingWindow._loginNameBox.Text,
+        if (!(_dateBaseConnector.AddUser(_accountCreatingWindow.LoginNameBox.Text,
                                        _accountCreatingWindow.PasswordBox.Text,
                                        _accountCreatingWindow.FirstNameBox.Text,
                                        _accountCreatingWindow.LastNameBox.Text)))
         {
-            if(string.IsNullOrEmpty(_accountCreatingWindow._loginNameBox.Text))
+            if(string.IsNullOrEmpty(_accountCreatingWindow.LoginNameBox.Text))
             {
                 MessageBox.Show("Enter login!", "Error");
             }
@@ -85,7 +85,7 @@ public partial class MyForm : Form
             return; 
         }
 
-        _workDesk.ChangeName(_accountCreatingWindow._loginNameBox.Text);
+        _workDesk.ChangeName(_accountCreatingWindow.LoginNameBox.Text);
         _accEditorWindow.FillTextBoxes(_dateBaseConnector.CurrentFirstName, _dateBaseConnector.CurrentLastName,
                                       _dateBaseConnector.CurrentUserLogin, _dateBaseConnector.CurrentPassword);
         _accountCreatingWindow.Close();
@@ -111,7 +111,7 @@ public partial class MyForm : Form
 
         _workDesk.WorkField.Clear();
         _arrayEditor.ClearArray();
-        _dateBaseConnector.CurrentArray = "";
+        _dateBaseConnector.CurrentArray = null;
     }
     private void ExitFromAcc_Click(object o, EventArgs e)
     {
@@ -128,7 +128,7 @@ public partial class MyForm : Form
     {
         if (_arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text))
         {
-            if (_dateBaseConnector.CurrentArray.Length == 0)
+            if (string.IsNullOrEmpty(_dateBaseConnector.CurrentArray))
             {
                 _saveArrayAsWindow.Open();
                 _workDesk.Close();
@@ -406,6 +406,7 @@ public partial class MyForm : Form
     }
     private void ShowInfo_Click(object o, EventArgs e)
     {
-        MessageBox.Show("Welcome to the best programm for working with arrays!!!\nMaded by Ilya Vasyanin, student of 444 group!!!\nYou can save, open and delete arrays in panel menu in chapter \"File\".\nYou can edit your account if you click on your login in panel menu.\nProgramm allows clear array, show sorted and source array.\nYou can add numbers in array, typing on text box, with window for random numbers and downloading from your stored arrays. Good luck!", "Info");
+        InfoForm infoForm = new InfoForm();
+        infoForm.Show();
     }
 }

@@ -2,7 +2,7 @@
 
 public class WindowEnter : WindowChapter
 {
-    public TextBox passwordBox {  get; private set; } = null!;
+    public TextBox PasswordBox {  get; private set; } = null!;
     public TextBox UserNameBox { get; private set; } = null!;
     private Label _enterPassword = null!;
     private Label _currentUser = null!;
@@ -27,7 +27,7 @@ public class WindowEnter : WindowChapter
     }
     protected override void InitializeComponent()
     {
-        passwordBox = new TextBox();
+        PasswordBox = new TextBox();
         _enterPassword = new Label();
         _currentUser = new Label();
         UserNameBox = new TextBox();
@@ -50,17 +50,17 @@ public class WindowEnter : WindowChapter
         _appTitle.TabIndex = 0;
         _appTitle.Text = "Master of Arrays";
         // 
-        // passwordBox
+        // PasswordBox
         // 
-        passwordBox.BackColor = Color.Black;
-        passwordBox.BorderStyle = BorderStyle.FixedSingle;
-        passwordBox.Font = new Font("Old English Text MT", 13F);
-        passwordBox.ForeColor = Color.White;
-        passwordBox.Location = new Point(200, 210);
-        passwordBox.Name = "passwordBox";
-        passwordBox.PasswordChar = '*';
-        passwordBox.Size = new Size(410, 34);
-        passwordBox.TabIndex = 1;
+        PasswordBox.BackColor = Color.Black;
+        PasswordBox.BorderStyle = BorderStyle.FixedSingle;
+        PasswordBox.Font = new Font("Old English Text MT", 13F);
+        PasswordBox.ForeColor = Color.White;
+        PasswordBox.Location = new Point(200, 210);
+        PasswordBox.Name = "passwordBox";
+        PasswordBox.PasswordChar = '*';
+        PasswordBox.Size = new Size(410, 34);
+        PasswordBox.TabIndex = 1;
         // 
         // _enterPassword
         // 
@@ -123,7 +123,7 @@ public class WindowEnter : WindowChapter
 
         MainPanel.Controls.Add(UserNameBox);
         MainPanel.Controls.Add(_appTitle);
-        MainPanel.Controls.Add(passwordBox);
+        MainPanel.Controls.Add(PasswordBox);
         MainPanel.Controls.Add(_enterPassword);
         MainPanel.Controls.Add(_currentUser);
         MainPanel.Controls.Add(_enterButton);
@@ -133,7 +133,7 @@ public class WindowEnter : WindowChapter
     public override void Close()
     {
         UserNameBox.Clear();
-        passwordBox.Clear();
+        PasswordBox.Clear();
         base.Close();
     }
 }
