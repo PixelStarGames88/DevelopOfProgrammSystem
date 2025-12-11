@@ -44,6 +44,7 @@
             ThankYouVeryMuchButton.TabIndex = 0;
             ThankYouVeryMuchButton.Text = "Thank you very much";
             ThankYouVeryMuchButton.UseVisualStyleBackColor = false;
+            ThankYouVeryMuchButton.Click += ThankYouVeryMuchButton_Click;
             // 
             // label1
             // 

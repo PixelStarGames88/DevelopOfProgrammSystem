@@ -74,6 +74,7 @@ public class WindowAccounEditor : WindowChapter
         _appTitle.Size = new Size(317, 52);
         _appTitle.TabIndex = 0;
         _appTitle.Text = "Master of Arrays";
+        _appTitle.ForeColor = Color.DarkRed;
         // 
         // _backButton
         // 

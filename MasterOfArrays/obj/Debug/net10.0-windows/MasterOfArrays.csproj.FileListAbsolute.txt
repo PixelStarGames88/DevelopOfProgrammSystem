@@ -48,4 +48,4 @@ C:\Users\Ivar\Desktop\Склад\Programming\C#\Lab 3\MasterOfArrays\MasterOfArr
 C:\Users\Ivar\Desktop\Склад\Programming\C#\Lab 3\MasterOfArrays\MasterOfArrays\obj\Debug\net10.0-windows\MasterOf.6D72CF9C.Up2Date
 C:\Users\Ivar\Desktop\Склад\Programming\C#\Lab 3\MasterOfArrays\MasterOfArrays\obj\Debug\net10.0-windows\MasterOfArrays.sourcelink.json
 C:\Users\Ivar\Desktop\Склад\Programming\C#\Lab 3\MasterOfArrays\MasterOfArrays\obj\Debug\net10.0-windows\MasterOfArrays.InfoForm.resources
-C:\Users\Ivar\Desktop\Склад\Programming\C#\Lab 3\MasterOfArrays\MasterOfArrays\obj\Debug\net10.0-windows\MasterOfArrays.MassageForm.resources
+C:\Users\Ivar\Desktop\Склад\Programming\C#\Lab 3\MasterOfArrays\MasterOfArrays\obj\Debug\net10.0-windows\MasterOfArrays.MessageForm.resources

@@ -56,6 +56,7 @@ public class WindowUserArrays : WindowChapter
         _cancelButton.Size = new Size(112, 34);
         _cancelButton.TabIndex = 12;
         _cancelButton.Text = "Cancel";
+        _cancelButton.ForeColor = Color.DarkRed;
         // 
         // _arraysLabel
         // 
@@ -76,6 +77,7 @@ public class WindowUserArrays : WindowChapter
         _enterButton.Size = new Size(112, 34);
         _enterButton.TabIndex = 15;
         _enterButton.Text = "Enter";
+        _enterButton.ForeColor = Color.DarkRed;
         // 
         // _appTitle
         // 
@@ -85,6 +87,7 @@ public class WindowUserArrays : WindowChapter
         _appTitle.Size = new Size(317, 52);
         _appTitle.TabIndex = 0;
         _appTitle.Text = "Master of Arrays";
+        _appTitle.ForeColor = Color.DarkRed;
         // 
         // _emptyLabel
         // 
@@ -121,7 +124,7 @@ public class WindowUserArrays : WindowChapter
                 ArrayChoiseButton.Anchor = AnchorStyles.Left;
                 ArrayChoiseButton.FlatStyle = FlatStyle.Popup;
                 ArrayChoiseButton.Font = new Font("Old English Text MT", 12F);
-                ArrayChoiseButton.ForeColor = Color.DarkRed;
+                ArrayChoiseButton.ForeColor = Color.White;
                 ArrayChoiseButton.ImageAlign = ContentAlignment.MiddleLeft;
                 ArrayChoiseButton.Location = new Point(3, 3 + 34 * (count));
                 ArrayChoiseButton.Name = "ArrayChoiseButton";

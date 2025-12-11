@@ -8,7 +8,6 @@ public class WindowWorkDesk : WindowChapter
     private ToolStripMenuItem _newArrayToolStripMenuItem = null!;
     private ToolStripMenuItem _openArrayToolStripMenuItem = null!;
     private ToolStripMenuItem _saveArrayToolStripMenuItem = null!;
-    private ToolStripMenuItem _saveArrayAsToolStripMenuItem = null!;
     private ToolStripMenuItem _deleteArrayToolStripMenuItem = null!;
     private ToolStripMenuItem _exitToolStripMenuItem = null!;
     private ToolStripMenuItem _userToolStripMenuItem = null!;
@@ -26,7 +25,6 @@ public class WindowWorkDesk : WindowChapter
         _newArrayToolStripMenuItem = new ToolStripMenuItem();
         _openArrayToolStripMenuItem = new ToolStripMenuItem();
         _saveArrayToolStripMenuItem = new ToolStripMenuItem();
-        _saveArrayAsToolStripMenuItem = new ToolStripMenuItem();
         _deleteArrayToolStripMenuItem = new ToolStripMenuItem();
 
         _exitToolStripMenuItem = new ToolStripMenuItem();
@@ -62,7 +60,7 @@ public class WindowWorkDesk : WindowChapter
         // _fileToolStripMenuItem
         // 
         _fileToolStripMenuItem.BackColor = Color.Black;
-        _fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { _newArrayToolStripMenuItem, _openArrayToolStripMenuItem, _saveArrayToolStripMenuItem, _saveArrayAsToolStripMenuItem, _deleteArrayToolStripMenuItem, _exitToolStripMenuItem });
+        _fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { _newArrayToolStripMenuItem, _openArrayToolStripMenuItem, _saveArrayToolStripMenuItem, _deleteArrayToolStripMenuItem, _exitToolStripMenuItem });
         _fileToolStripMenuItem.ForeColor = Color.DarkRed;
         _fileToolStripMenuItem.Name = "fileToolStripMenuItem";
         _fileToolStripMenuItem.Size = new Size(58, 28);
@@ -111,12 +109,6 @@ public class WindowWorkDesk : WindowChapter
         _saveArrayToolStripMenuItem.Size = new Size(225, 28);
         _saveArrayToolStripMenuItem.Text = "Save Array";
         // 
-        // _saveArrayAsToolStripMenuItem
-        // 
-        _saveArrayAsToolStripMenuItem.Name = "saveArrayAsToolStripMenuItem";
-        _saveArrayAsToolStripMenuItem.Size = new Size(225, 28);
-        _saveArrayAsToolStripMenuItem.Text = "Save Array as..";
-        // 
         // _exitToolStripMenuItem
         // 
         _exitToolStripMenuItem.Name = "exitToolStripMenuItem";
@@ -134,7 +126,7 @@ public class WindowWorkDesk : WindowChapter
         WorkField.BackColor = Color.Black;
         WorkField.BorderStyle = BorderStyle.FixedSingle;
         WorkField.Font = new Font("Old English Text MT", 12F);
-        WorkField.ForeColor = Color.DarkRed;
+        WorkField.ForeColor = Color.White;
         WorkField.Location = new Point(5, 43);
         WorkField.Multiline = true;
         WorkField.Name = "WorkField";
@@ -175,10 +167,6 @@ public class WindowWorkDesk : WindowChapter
     public void saveArrayToolStripMenuItem_Click(EventHandler outEvent)
     {
         _saveArrayToolStripMenuItem.Click += outEvent;
-    }
-    public void saveArrayAsToolStripMenuItem_Click(EventHandler outEvent)
-    {
-        _saveArrayAsToolStripMenuItem.Click += outEvent;
     }
     public void deleteArrayToolStripMenuItem_Click( EventHandler outEvent)
     {

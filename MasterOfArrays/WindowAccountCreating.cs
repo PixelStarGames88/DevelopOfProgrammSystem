@@ -43,6 +43,7 @@ public class WindowAccountCreating : WindowChapter
         _appTitle.Size = new Size(317, 52);
         _appTitle.TabIndex = 0;
         _appTitle.Text = "Master of Arrays";
+        _appTitle.ForeColor = Color.DarkRed;
         // 
         // mainPanel
         // 
@@ -161,6 +162,7 @@ public class WindowAccountCreating : WindowChapter
         _finishButton.Size = new Size(112, 47);
         _finishButton.TabIndex = 12;
         _finishButton.Text = "Finish";
+        _finishButton.ForeColor = Color.DarkRed;
         // 
         // _firstNameLabel
         // 
@@ -180,6 +182,7 @@ public class WindowAccountCreating : WindowChapter
         _exitButton.Size = new Size(112, 47);
         _exitButton.TabIndex = 3;
         _exitButton.Text = "Exit";
+        _exitButton.ForeColor = Color.DarkRed;
         // 
         // FirstNameBox
         // 

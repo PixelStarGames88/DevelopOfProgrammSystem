@@ -3,16 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\UnitTest.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\unittest1\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\UnitTest.csproj|solutionrelative:unittest1\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\windowuserarrays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\windowuserarrays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\UnitTest.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\unittest1\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\UnitTest.csproj|solutionrelative:unittest1\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\windowworkdesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\windowworkdesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\windowarrayedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\windowarrayedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\windowenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\windowenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\windowaccountcreating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\windowaccountcreating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\windowaccouneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\windowaccouneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\arrayeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\arrayeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\datebaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\datebaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\IntegratedTest.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\unittest1\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C9F5F66-29C0-4450-ABB5-9BC9513F5E08}|UnitTest1\\IntegratedTest.csproj|solutionrelative:unittest1\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\myform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\myform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\infoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\infoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\infoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\infoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\masterofarrays\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\masterofarrays\\infoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\infoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\lab 3\\masterofarrays\\masterofarrays\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C9F481-68DB-9A12-1308-323B1BA2A087}|MasterOfArrays\\MasterOfArrays.csproj|solutionrelative:masterofarrays\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +86,268 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InfoForm.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\InfoForm.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\InfoForm.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\InfoForm.cs",
+              "RelativeToolTip": "MasterOfArrays\\InfoForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T19:11:55.311Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MSTestSettings.cs",
-              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\MSTestSettings.cs",
-              "RelativeDocumentMoniker": "UnitTest1\\MSTestSettings.cs",
-              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\MSTestSettings.cs",
-              "RelativeToolTip": "UnitTest1\\MSTestSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "WindowUserArrays.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowUserArrays.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\WindowUserArrays.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowUserArrays.cs",
+              "RelativeToolTip": "MasterOfArrays\\WindowUserArrays.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAkwH4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T14:53:50.989Z",
+              "WhenOpened": "2025-12-11T22:50:07.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WindowEnter.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowEnter.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\WindowEnter.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowEnter.cs",
+              "RelativeToolTip": "MasterOfArrays\\WindowEnter.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAowGcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T22:48:08.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WindowAccounEditor.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowAccounEditor.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\WindowAccounEditor.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowAccounEditor.cs",
+              "RelativeToolTip": "MasterOfArrays\\WindowAccounEditor.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswEwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T17:48:46.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WindowWorkDesk.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowWorkDesk.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\WindowWorkDesk.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowWorkDesk.cs",
+              "RelativeToolTip": "MasterOfArrays\\WindowWorkDesk.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwIAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T20:05:18.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "WindowArrayEdit.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowArrayEdit.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\WindowArrayEdit.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowArrayEdit.cs",
+              "RelativeToolTip": "MasterOfArrays\\WindowArrayEdit.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T22:49:47.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WindowAccountCreating.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowAccountCreating.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\WindowAccountCreating.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\WindowAccountCreating.cs",
+              "RelativeToolTip": "MasterOfArrays\\WindowAccountCreating.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAwwLgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T22:20:20.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArrayEditor.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\ArrayEditor.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\ArrayEditor.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\ArrayEditor.cs",
+              "RelativeToolTip": "MasterOfArrays\\ArrayEditor.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T20:00:16.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Constants.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Constants.cs",
               "RelativeDocumentMoniker": "MasterOfArrays\\Constants.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Constants.cs",
               "RelativeToolTip": "MasterOfArrays\\Constants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T14:53:42.483Z",
+              "WhenOpened": "2025-12-11T17:48:44.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "Test.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\Test.cs",
               "RelativeDocumentMoniker": "UnitTest1\\Test.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\Test.cs",
               "RelativeToolTip": "UnitTest1\\Test.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwDgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAA0wFsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T14:42:14.806Z",
+              "WhenOpened": "2025-12-11T20:13:21.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DateBaseConnector.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\DateBaseConnector.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\DateBaseConnector.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\DateBaseConnector.cs",
+              "RelativeToolTip": "MasterOfArrays\\DateBaseConnector.cs",
+              "ViewState": "AgIAAC0BAAAAAAAAAAAUwDIBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:17:23.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Form1.Designer.cs",
+              "RelativeToolTip": "MasterOfArrays\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:34:58.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MyForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.Designer.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\MyForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.Designer.cs",
+              "RelativeToolTip": "MasterOfArrays\\MyForm.Designer.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAGwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:18:13.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MyForm.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\MyForm.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.cs",
+              "RelativeToolTip": "MasterOfArrays\\MyForm.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAuwNoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:18:09.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InfoForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\InfoForm.Designer.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\InfoForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\InfoForm.Designer.cs",
+              "RelativeToolTip": "MasterOfArrays\\InfoForm.Designer.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:23:59.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Form1.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\Form1.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Form1.cs",
+              "RelativeToolTip": "MasterOfArrays\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:34:26.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\InfoForm.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\InfoForm.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\InfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MasterOfArrays\\InfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:16:45.651Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MyForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\MyForm.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MasterOfArrays\\MyForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:24:15.779Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Program.cs",
+              "RelativeDocumentMoniker": "MasterOfArrays\\Program.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\Program.cs",
+              "RelativeToolTip": "MasterOfArrays\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:17:57.685Z",
               "EditorCaption": ""
             }
           ]

@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        private void ThankYouVeryMuchButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -279,9 +279,10 @@ public class DateBaseConnector
         using var DeleteCmd = connection.CreateCommand();
         DeleteCmd.CommandText = @"
             DELETE FROM UserArrays
-            WHERE Array_Unique_Name = $name;
+            WHERE Array_Unique_Name = $name and User_ID = $userName;
         ";
         DeleteCmd.Parameters.AddWithValue("$name", NameArray);
+        DeleteCmd.Parameters.AddWithValue("$userName", CurrentUserLogin);
         try
         {
             DeleteCmd.ExecuteNonQuery();
@@ -292,5 +293,16 @@ public class DateBaseConnector
         {
             return false;
         }
+    }
+    public bool VacuumDB()
+    {
+        using var connection = new SqliteConnection($"Data Source={_dbPath}");
+        connection.Open();
+
+        using var VacuumCmd = connection.CreateCommand();
+        VacuumCmd.CommandText = @"VACUUM;";
+       
+            VacuumCmd.ExecuteNonQuery();
+            return true;
     }
 }

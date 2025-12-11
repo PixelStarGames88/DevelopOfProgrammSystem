@@ -15,15 +15,18 @@ public partial class MyForm : Form
         {
             if(string.IsNullOrEmpty(_enterWindow.UserNameBox.Text))
             {
-                MessageBox.Show("Field of login is empty!", "Error");
+                MessageForm error = new MessageForm("Field of login is empty!", "Error");
+                error.Show();
             }
             else if (string.IsNullOrEmpty(_enterWindow.PasswordBox.Text))
             {
-                MessageBox.Show("Field of password is empty!", "Error");
+                MessageForm error = new MessageForm("Field of password is empty!", "Error");
+                error.Show();
             }
             else
             {
-                MessageBox.Show("Password or login is not correct!", "Error");
+                MessageForm error = new MessageForm("Password or login is not correct!", "Error");
+                error.Show();
             }
             return;
         }
@@ -56,11 +59,13 @@ public partial class MyForm : Form
         {
             if(string.IsNullOrEmpty(_accountCreatingWindow.RepeatPasswordBox.Text))
             {
-                MessageBox.Show("Repeat password!", "Error");
+                MessageForm error = new MessageForm("Repeat password!", "Error");
+                error.Show();
             }
             else
             {
-                MessageBox.Show("Repeat password correctly!", "Error");
+                MessageForm error = new MessageForm("Repeat password correctly!", "Error");
+                error.Show();
             }
                 
             return; 
@@ -72,15 +77,18 @@ public partial class MyForm : Form
         {
             if(string.IsNullOrEmpty(_accountCreatingWindow.LoginNameBox.Text))
             {
-                MessageBox.Show("Enter login!", "Error");
+                MessageForm error = new MessageForm("Enter login!", "Error");
+                error.Show();
             }
             else if (string.IsNullOrEmpty(_accountCreatingWindow.PasswordBox.Text))
             {
-                MessageBox.Show("Enter password!", "Error");
+                MessageForm error = new MessageForm("Enter password!", "Error");
+                error.Show();
             }
             else
             {
-                MessageBox.Show("Account with same login already exists!", "Error");
+                MessageForm error = new MessageForm("Account with same login already exists!", "Error");
+                error.Show();
             }  
             return; 
         }
@@ -95,23 +103,9 @@ public partial class MyForm : Form
     }
     private void NewArray_Click(object o, EventArgs e)
     {
-        if(!string.IsNullOrEmpty(_workDesk.WorkField.Text))
-        {
-            MessageBoxButtons button = MessageBoxButtons.YesNoCancel;
-            DialogResult result = MessageBox.Show("Do you want to save your array?", "Message", button);
-            if(result == DialogResult.Yes)
-            {
-                SaveArray_Click(o, e);
-            }
-            else if (result == DialogResult.Cancel)
-            {
-                return;
-            }
-        }
-
+        _dateBaseConnector.CurrentArray = "";
         _workDesk.WorkField.Clear();
         _arrayEditor.ClearArray();
-        _dateBaseConnector.CurrentArray = null;
     }
     private void ExitFromAcc_Click(object o, EventArgs e)
     {
@@ -124,34 +118,8 @@ public partial class MyForm : Form
         _workDesk.Close();
         _openArrayWindow.AddButtons(_dateBaseConnector.UserArrays);
     }
+
     private void SaveArray_Click(object o, EventArgs e)
-    {
-        if (_arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text))
-        {
-            if (string.IsNullOrEmpty(_dateBaseConnector.CurrentArray))
-            {
-                _saveArrayAsWindow.Open();
-                _workDesk.Close();
-                _saveArrayAsWindow.AddButtons(_dateBaseConnector.UserArrays);
-            }
-            else
-            {
-                if (_dateBaseConnector.UpdateArray(_arrayEditor.GetStringSourceArray(), _dateBaseConnector.CurrentArray))
-                {
-                    MessageBox.Show("The save is success!", "Info");
-                }
-                else
-                {
-                    MessageBox.Show("The save is not success!", "Info");
-                }
-            }
-        }
-        else
-        {
-            MessageBox.Show("Array has not numbers!", "Info");
-        }
-    }
-    private void SaveArrayAs_Click(object o, EventArgs e)
     {
         _saveArrayAsWindow.Open();
         _workDesk.Close();
@@ -178,7 +146,8 @@ public partial class MyForm : Form
         }
         else
         {
-            MessageBox.Show("Format is not correct!", "Error");
+            MessageForm error = new MessageForm("Format is not correct!", "Error");
+            error.Show();
         }
     }
     private void ShowSourceArray_Click(object o, EventArgs e)
@@ -189,7 +158,8 @@ public partial class MyForm : Form
         }
         else
         {
-            MessageBox.Show("Format is not correct!", "Error");
+            MessageForm error = new MessageForm("Format is not correct!", "Error");
+            error.Show();
         }
     }
     private void FillRandomNumber_Click(object o, EventArgs e)
@@ -201,31 +171,36 @@ public partial class MyForm : Form
            string.IsNullOrEmpty(_windowRandomNambers.lastLimitBox.Text) ||
            string.IsNullOrEmpty(_windowRandomNambers.Quantity.Text))
         {
-            MessageBox.Show("Fill empty fields!", "Error");
+            MessageForm error = new MessageForm("Fill empty fields!", "Error");
+            error.Show();
             return;
         }
         else if (!(int.TryParse(_windowRandomNambers.firstLimitBox.Text, out firstLimit) &&
             int.TryParse(_windowRandomNambers.lastLimitBox.Text, out secondLimit) &&
             uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity)))
         {
-            MessageBox.Show("Enter integer number!", "Error");
+            MessageForm error = new MessageForm("Enter integer number!", "Error");
+            error.Show();
             return;
         }
         else if (!uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity) &&
             (int.TryParse(_windowRandomNambers.lastLimitBox.Text, out firstLimit) ||
              int.TryParse(_windowRandomNambers.firstLimitBox.Text, out secondLimit)))
         {
-            MessageBox.Show("Enter positive number!", "Error");
+            MessageForm error = new MessageForm("Enter positive number!", "Error");
+            error.Show();
             return;
         }
         else if(Math.Abs(firstLimit) > Constants.NUMBER_IN_ARRAY_LIMIT || Math.Abs(secondLimit) > Constants.NUMBER_IN_ARRAY_LIMIT)
         {
-            MessageBox.Show("Absolute numbers cannot be more than " + Constants.QUANTITY_LIMIT +"!", "Error");
+            MessageForm error = new MessageForm("Absolute numbers cannot be more than " + Constants.QUANTITY_LIMIT + "!", "Error");
+            error.Show();
             return;
         }
         else if(quantity + _arrayEditor.GetArray.Length > Constants.QUANTITY_LIMIT)
         {
-            MessageBox.Show("You can add only " + (Constants.QUANTITY_LIMIT - _arrayEditor.GetArray.Length) + " numbers!", "Error");
+            MessageForm error = new MessageForm("You can add only " + (Constants.QUANTITY_LIMIT - _arrayEditor.GetArray.Length) + " numbers!", "Error");
+            error.Show();
             return;
         }
         _arrayEditor.AddRandomNumbers(quantity, firstLimit, secondLimit);
@@ -263,25 +238,29 @@ public partial class MyForm : Form
             {
                 _saveArrayAsWindow.Close();
                 _workDesk.Open();
-                MessageBox.Show("New array was added!", "Info");
+                MessageForm info = new MessageForm("New array was added!", "Info");
+                info.Show();
             }
             else
             {
                 if (_dateBaseConnector.UpdateArray(_workDesk.WorkField.Text, _saveArrayAsWindow.LastNameBox.Text))
                 {
-                    MessageBox.Show("Array " + _saveArrayAsWindow.LastNameBox.Text + " was added!", "Info");
+                    MessageForm info = new MessageForm("Array " + _saveArrayAsWindow.LastNameBox.Text + " was added!", "Info");
+                    info.Show();
                     _saveArrayAsWindow.Close();
                     _workDesk.Open();
                 }
                 else
                 {
-                    MessageBox.Show("This array not exist!", "Info");
+                    MessageForm error = new MessageForm("This array not exist!", "Error");
+                    error.Show();
                 }
             }
         }
         else
         {
-            MessageBox.Show("Array has not numbers!", "Info");
+            MessageForm error = new MessageForm("Array has not numbers!", "Error");
+            error.Show();
         }
     }
     private void CancelSaveArrayAs_Click(object o, EventArgs e)
@@ -305,11 +284,13 @@ public partial class MyForm : Form
             _workDesk.WorkField.Text = ArrayString;
             _openArrayWindow.Close();
             _workDesk.Open();
-            MessageBox.Show("Operation is success!", "Info");
+            MessageForm info = new MessageForm("Operation is success!", "Info");
+            info.Show();
         }
         else
         {
-            MessageBox.Show("This array not exist!", "Info");
+            MessageForm error = new MessageForm("This array not exist!", "Error");
+            error.Show();
         }
 
     }
@@ -323,11 +304,13 @@ public partial class MyForm : Form
             _arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text);
             _openArrayWindow.Close();
             _workDesk.Open();
-            MessageBox.Show("Operation is success!", "Info");
+            MessageForm info = new MessageForm("Operation is success!", "Info");
+            info.Show();
         }
         else
         {
-            MessageBox.Show("This array not exist!", "Info");
+            MessageForm error = new MessageForm("This array not exist!", "Error");
+            error.Show();
         }
     }
     private void CancelDownloadArray_Click(object o, EventArgs e)
@@ -342,11 +325,13 @@ public partial class MyForm : Form
         {
             _deleteArrayWindow.Close();
             _workDesk.Open();
-            MessageBox.Show("Operation is success!", "Info");
+            MessageForm info = new MessageForm("Operation is success!", "Info");
+            info.Show();
         }
         else
         {
-            MessageBox.Show("This array not exist!", "Info");
+            MessageForm error = new MessageForm("This array not exist!", "Error");
+            error.Show();
         }
     }
     private void CancelDeleteArray_Click(object o, EventArgs e)
@@ -369,22 +354,26 @@ public partial class MyForm : Form
         {
             if(string.IsNullOrEmpty(_accEditorWindow.PasswordTextBox.Text))
             {
-                MessageBox.Show("Field of password is empty!", "Error");
+                MessageForm error = new MessageForm("Field of password is empty!", "Error");
+                error.Show();
             }
             else if (string.IsNullOrEmpty(_accEditorWindow.LoginTextBox.Text))
             {
-                MessageBox.Show("Field of login is empty!", "Error");
+                MessageForm error = new MessageForm("Field of login is empty!", "Error");
+                error.Show();
             }
             else
             {
-                MessageBox.Show("Account with same login already exists!", "Error");
+                MessageForm error = new MessageForm("Account with same login already exists!", "Error");
+                error.Show();
             }
             return;
         }
         _accEditorWindow.Close();
         _workDesk.Open();
         _workDesk.ChangeName(_dateBaseConnector.CurrentUserLogin);
-        MessageBox.Show("Operation is success!", "Info");
+        MessageForm info = new MessageForm("Operation is success!", "Info");
+        info.Show();
     }
     private void DeleteAcc_Click(object o, EventArgs e)
     {
@@ -392,11 +381,13 @@ public partial class MyForm : Form
         {
             _accEditorWindow.Close();
             _enterWindow.Open();
-            MessageBox.Show("Operation is success!", "Info");
+            MessageForm info = new MessageForm("Operation is success!", "Info");
+            info.Show();
         }
         else
         {
-            MessageBox.Show("Operation is not success!", "Info");
+            MessageForm error = new MessageForm("Operation is not success!", "Error");
+            error.Show();
         }
     }
     private void ExitFromAccount_Click(object o, EventArgs e)

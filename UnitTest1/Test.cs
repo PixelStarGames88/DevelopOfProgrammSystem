@@ -1,6 +1,5 @@
 ﻿using MasterOfArrays;
-using System;
-namespace UnitTest;
+namespace IntegratedTest;
 
 [TestClass]
 public sealed class Test
@@ -20,30 +19,37 @@ public sealed class Test
         dbConnector.AddUser("testUser", "100", "", "");
         dbConnector.SignIsWellDone("testUser", "100");
     }
-    public bool UserTest(int quantity)
+    public bool AddTest(int quantity)
     {
-        
-        int count = 0;
         for (int i = 0; i < quantity; i++)
         {
-            
             arrayEditor.AddRandomNumbers((uint)random.Next(0, Constants.QUANTITY_LIMIT),
                                      random.Next(-Constants.NUMBER_IN_ARRAY_LIMIT, Constants.NUMBER_IN_ARRAY_LIMIT),
                                      random.Next(-Constants.NUMBER_IN_ARRAY_LIMIT, Constants.NUMBER_IN_ARRAY_LIMIT));
-            if (dbConnector.AddArray(arrayEditor.GetStringSourceArray(), ("Array" + i))) count++;
-            arrayEditor.ClearArray();   
+            dbConnector.AddArray(arrayEditor.GetStringSourceArray(), ("Array " + i));
         }
-        for(int i = 0; i < quantity; ++i)
-        {
-            string array;
-            if(dbConnector.GetArrayFromDB(out array, ("Array" + i))) count++;
-        }
-        for( int i = 0; i < quantity; i++)
-        {
-            if(dbConnector.DeleteArray("Array" + i)) count++;
+        return quantity == dbConnector.UserArrays.Count;
+    }
 
+    public bool DownloadTest(int quantity)
+    {
+        int count = 0;
+        for (int i = 0; i < quantity; ++i)
+        {
+            string array = "";
+            if (dbConnector.GetArrayFromDB(out array, ("Array " + i))) count++;
         }
-        return count == quantity * 3;
+        return count == quantity;
+    }
+
+    public bool DeleteTest(int quantity)
+    {
+
+        for (int i = 0; i < quantity; i++)
+        {
+            dbConnector.DeleteArray("Array " + i);
+        }
+        return dbConnector.UserArrays.Count == 0;
     }
 
     [TestCleanup]
@@ -51,20 +57,38 @@ public sealed class Test
     {
         dbConnector.DeleteUser("testUser");
     }
+    [AssemblyCleanup]
+    public static void AssemblyTeardown()
+    {
+        var dbConnector = new DateBaseConnector();
+        dbConnector.VacuumDB();
+    }
 
     [TestMethod]
-    public void TestMethodWithHundriedArrays()
+    [DoNotParallelize]
+    public void TestMethod_01_With100Arrays()
     {
-        Assert.IsTrue(UserTest(100));
+        Assert.IsTrue(AddTest(100));
+        Assert.IsTrue(DownloadTest(100));
+        Assert.IsTrue(DeleteTest(100));
     }
+    
     [TestMethod]
-    public void TestMethodWithThouthendArrays()
+    [DoNotParallelize]
+    public void TestMethod_02_With1000Arrays()
     {
-        Assert.IsTrue(UserTest(1000));
+        Assert.IsTrue(AddTest(1000));
+        Assert.IsTrue(DownloadTest(1000));
+        Assert.IsTrue(DeleteTest(1000));
     }
+
     [TestMethod]
-    public void TestMethodWithTenThouthendArrays()
+    [DoNotParallelize]
+    public void TestMethod_03_With10000Arrays()
     {
-        Assert.IsTrue(UserTest(10000));
+        Assert.IsTrue(AddTest(10000));
+        Assert.IsTrue(DownloadTest(10000));
+        Assert.IsTrue(DeleteTest(10000));
     }
+
 }

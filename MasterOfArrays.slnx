@@ -1,4 +1,4 @@
 <Solution>
   <Project Path="MasterOfArrays/MasterOfArrays.csproj" />
-  <Project Path="UnitTest1/UnitTest.csproj" Id="1c9f5f66-29c0-4450-abb5-9bc9513f5e08" />
+  <Project Path="UnitTest1/IntegratedTest.csproj" Id="1c9f5f66-29c0-4450-abb5-9bc9513f5e08" />
 </Solution>

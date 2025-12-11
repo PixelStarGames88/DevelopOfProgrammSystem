@@ -68,7 +68,6 @@ partial class MyForm
         _workDesk.exitFromAccToolStripMenuItep_Click(ExitFromAcc_Click);
         _workDesk.editDataToolStripMenuItem_Click(EnterToEditAcc_Click);
         _workDesk.openToolStripMenuItem_Click(OpenArray_Click);
-        _workDesk.saveArrayAsToolStripMenuItem_Click(SaveArrayAs_Click);
         _workDesk.saveArrayToolStripMenuItem_Click(SaveArray_Click);
         _workDesk.exitFromProgrammToolStripMenuItep_Click(ExitFromProgramm_Click);
         _workDesk.deleteArrayToolStripMenuItem_Click(DeleteArray_Click);

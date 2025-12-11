@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LSE4yeX0Jqs=",
+  "dgSpecHash": "E3oul/eqUGM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\UnitTest.csproj",
+  "projectFilePath": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\IntegratedTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivar\\.nuget\\packages\\microsoft.applicationinsights\\2.23.0\\microsoft.applicationinsights.2.23.0.nupkg.sha512",
     "C:\\Users\\Ivar\\.nuget\\packages\\microsoft.codecoverage\\18.0.0\\microsoft.codecoverage.18.0.0.nupkg.sha512",

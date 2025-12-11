@@ -28,6 +28,7 @@ public class WindowArrayEdit : WindowChapter
         _clearArray.Size = new Size(135, 86);
         _clearArray.TabIndex = 0;
         _clearArray.Text = "Clear";
+        _clearArray.ForeColor = Color.DarkRed;
         // 
         // _fillRandomNumber
         // 
@@ -39,6 +40,7 @@ public class WindowArrayEdit : WindowChapter
         _fillRandomNumber.Size = new Size(135, 86);
         _fillRandomNumber.TabIndex = 2;
         _fillRandomNumber.Text = "Fill random numbers";
+        _fillRandomNumber.ForeColor = Color.DarkRed;
         // 
         // _showSourceArray
         // 
@@ -50,6 +52,7 @@ public class WindowArrayEdit : WindowChapter
         _showSourceArray.Size = new Size(135, 86);
         _showSourceArray.TabIndex = 3;
         _showSourceArray.Text = "Show source array";
+        _showSourceArray.ForeColor = Color.DarkRed;
         // 
         // _showSortedArray
         // 
@@ -61,6 +64,7 @@ public class WindowArrayEdit : WindowChapter
         _showSortedArray.Size = new Size(135, 86);
         _showSortedArray.TabIndex = 4;
         _showSortedArray.Text = "Show sorted array";
+        _showSortedArray.ForeColor = Color.DarkRed;
         // 
         // _downloadArray
         // 
@@ -72,6 +76,7 @@ public class WindowArrayEdit : WindowChapter
         _downloadArray.Size = new Size(135, 86);
         _downloadArray.TabIndex = 5;
         _downloadArray.Text = "Download array";
+        _downloadArray.ForeColor = Color.DarkRed;
 
         
         MainPanel.Controls.Add(_downloadArray);

@@ -49,6 +49,7 @@ public class WindowEnter : WindowChapter
         _appTitle.Size = new Size(317, 52);
         _appTitle.TabIndex = 0;
         _appTitle.Text = "Master of Arrays";
+        _appTitle.ForeColor = Color.DarkRed;
         // 
         // PasswordBox
         // 
@@ -100,6 +101,7 @@ public class WindowEnter : WindowChapter
         _enterButton.Size = new Size(290, 40);
         _enterButton.TabIndex = 1;
         _enterButton.Text = "Enter";
+        _enterButton.ForeColor = Color.White;
         // 
         // _newAccButton
         // 
@@ -109,7 +111,8 @@ public class WindowEnter : WindowChapter
         _newAccButton.Name = "NewUser";
         _newAccButton.Size = new Size(140, 40);
         _newAccButton.TabIndex = 1;
-        _newAccButton.Text = "New Acc";
+        _newAccButton.Text = "New Account";
+        _newAccButton.ForeColor = Color.DarkRed;
         //
         // _newAccButton
         // 
@@ -120,6 +123,7 @@ public class WindowEnter : WindowChapter
         _exitButton.Size = new Size(140, 40);
         _exitButton.TabIndex = 1;
         _exitButton.Text = "Exit";
+        _exitButton.ForeColor = Color.DarkRed;
 
         MainPanel.Controls.Add(UserNameBox);
         MainPanel.Controls.Add(_appTitle);

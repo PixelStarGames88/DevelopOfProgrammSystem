@@ -2772,9 +2772,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\UnitTest.csproj",
-      "projectName": "UnitTest",
-      "projectPath": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\IntegratedTest.csproj",
+      "projectName": "IntegratedTest",
+      "projectPath": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\IntegratedTest.csproj",
       "packagesPath": "C:\\Users\\Ivar\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Ivar\\Desktop\\Склад\\Programming\\C#\\Lab 3\\MasterOfArrays\\UnitTest1\\obj\\",
       "projectStyle": "PackageReference",
