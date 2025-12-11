@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoForm));
-            ThankYouVeryMuchButton = new Button();
-            label1 = new Label();
+            _thankYouVeryMuchButton = new Button();
+            _infoLabel = new Label();
             SuspendLayout();
             // 
-            // ThankYouVeryMuchButton
+            // _thankYouVeryMuchButton
             // 
-            ThankYouVeryMuchButton.BackColor = Color.Black;
-            ThankYouVeryMuchButton.FlatStyle = FlatStyle.Flat;
-            ThankYouVeryMuchButton.ForeColor = Color.DarkRed;
-            ThankYouVeryMuchButton.Location = new Point(226, 191);
-            ThankYouVeryMuchButton.Name = "ThankYouVeryMuchButton";
-            ThankYouVeryMuchButton.Size = new Size(230, 50);
-            ThankYouVeryMuchButton.TabIndex = 0;
-            ThankYouVeryMuchButton.Text = "Thank you very much";
-            ThankYouVeryMuchButton.UseVisualStyleBackColor = false;
-            ThankYouVeryMuchButton.Click += ThankYouVeryMuchButton_Click;
+            _thankYouVeryMuchButton.BackColor = Color.Black;
+            _thankYouVeryMuchButton.FlatStyle = FlatStyle.Flat;
+            _thankYouVeryMuchButton.ForeColor = Color.DarkRed;
+            _thankYouVeryMuchButton.Location = new Point(226, 191);
+            _thankYouVeryMuchButton.Name = "ThankYouVeryMuchButton";
+            _thankYouVeryMuchButton.Size = new Size(230, 50);
+            _thankYouVeryMuchButton.TabIndex = 0;
+            _thankYouVeryMuchButton.Text = "Thank you very much";
+            _thankYouVeryMuchButton.UseVisualStyleBackColor = false;
+            _thankYouVeryMuchButton.Click += ThankYouVeryMuchButton_Click;
             // 
-            // label1
+            // _infoLabel
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 9);
-            label1.MaximumSize = new Size(700, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(683, 168);
-            label1.TabIndex = 1;
-            label1.Text = resources.GetString("label1.Text");
+            _infoLabel.AutoSize = true;
+            _infoLabel.ForeColor = Color.White;
+            _infoLabel.Location = new Point(12, 9);
+            _infoLabel.MaximumSize = new Size(700, 0);
+            _infoLabel.Name = "label1";
+            _infoLabel.Size = new Size(683, 168);
+            _infoLabel.TabIndex = 1;
+            _infoLabel.Text = resources.GetString("label1.Text");
             // 
             // InfoForm
             // 
@@ -63,8 +63,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(702, 253);
-            Controls.Add(label1);
-            Controls.Add(ThankYouVeryMuchButton);
+            Controls.Add(_infoLabel);
+            Controls.Add(_thankYouVeryMuchButton);
             Font = new Font("Old English Text MT", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 4, 5, 4);
             MaximumSize = new Size(720, 300);
@@ -77,7 +77,7 @@
 
         #endregion
 
-        private Button ThankYouVeryMuchButton;
-        private Label label1;
+        private Button _thankYouVeryMuchButton;
+        private Label _infoLabel;
     }
 }
