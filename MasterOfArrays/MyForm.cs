@@ -55,11 +55,25 @@ public partial class MyForm : Form
     }
     private void Finish_Click(object o, EventArgs e)
     {
+        if (_accountCreatingWindow.PasswordBox.Text.Length > Constants.MAX_LENGTH ||
+            _accountCreatingWindow.LoginNameBox.Text.Length > Constants.MAX_LENGTH ||
+            _accountCreatingWindow.FirstNameBox.Text.Length > Constants.MAX_LENGTH ||
+            _accountCreatingWindow.LastNameBox.Text.Length > Constants.MAX_LENGTH)
+        {
+            MessageForm error = new MessageForm("String lengh must be less then " + Constants.MAX_LENGTH + "!", "Error");
+            error.Show();
+            return;
+        }
         if (_accountCreatingWindow.PasswordBox.Text != _accountCreatingWindow.RepeatPasswordBox.Text)
         {
             if(string.IsNullOrEmpty(_accountCreatingWindow.RepeatPasswordBox.Text))
             {
                 MessageForm error = new MessageForm("Repeat password!", "Error");
+                error.Show();
+            }
+            else if(string.IsNullOrEmpty(_accountCreatingWindow.PasswordBox.Text))
+            {
+                MessageForm error = new MessageForm("Enter password!", "Error");
                 error.Show();
             }
             else
@@ -166,7 +180,8 @@ public partial class MyForm : Form
     {
         int firstLimit;
         int secondLimit;
-        uint quantity;
+        int quantity;
+        uint positiveQuantity;
         if(string.IsNullOrEmpty(_windowRandomNambers.firstLimitBox.Text) || 
            string.IsNullOrEmpty(_windowRandomNambers.lastLimitBox.Text) ||
            string.IsNullOrEmpty(_windowRandomNambers.Quantity.Text))
@@ -177,17 +192,15 @@ public partial class MyForm : Form
         }
         else if (!(int.TryParse(_windowRandomNambers.firstLimitBox.Text, out firstLimit) &&
             int.TryParse(_windowRandomNambers.lastLimitBox.Text, out secondLimit) &&
-            uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity)))
+            int.TryParse(_windowRandomNambers.Quantity.Text, out quantity)))
         {
-            MessageForm error = new MessageForm("Enter integer number!", "Error");
+            MessageForm error = new MessageForm("Not integer number or string overflow!", "Error");
             error.Show();
             return;
         }
-        else if (!uint.TryParse(_windowRandomNambers.Quantity.Text, out quantity) &&
-            (int.TryParse(_windowRandomNambers.lastLimitBox.Text, out firstLimit) ||
-             int.TryParse(_windowRandomNambers.firstLimitBox.Text, out secondLimit)))
+        else if (!uint.TryParse(_windowRandomNambers.Quantity.Text, out positiveQuantity))
         {
-            MessageForm error = new MessageForm("Enter positive number!", "Error");
+            MessageForm error = new MessageForm("Not integer positive number or string overflow!", "Error");
             error.Show();
             return;
         }
@@ -197,13 +210,13 @@ public partial class MyForm : Form
             error.Show();
             return;
         }
-        else if(quantity + _arrayEditor.GetArray.Length > Constants.QUANTITY_LIMIT)
+        else if(positiveQuantity + _arrayEditor.GetArray.Length > Constants.QUANTITY_LIMIT)
         {
             MessageForm error = new MessageForm("You can add only " + (Constants.QUANTITY_LIMIT - _arrayEditor.GetArray.Length) + " numbers!", "Error");
             error.Show();
             return;
         }
-        _arrayEditor.AddRandomNumbers(quantity, firstLimit, secondLimit);
+        _arrayEditor.AddRandomNumbers(positiveQuantity, firstLimit, secondLimit);
         _workDesk.WorkField.Text = _arrayEditor.GetStringSourceArray();
         _windowRandomNambers.Close(); _arrayEditWindow.Open();
     }
@@ -232,6 +245,13 @@ public partial class MyForm : Form
 
     private void ChoiceArrayForSave_Click(object o, EventArgs e)
     {
+        if (_saveArrayAsWindow.LastNameBox.Text.Length > Constants.MAX_LENGTH)
+        {
+            MessageForm error = new MessageForm("String lengh must be less then " + Constants.MAX_LENGTH + "!", "Error");
+            error.Show();
+            return;
+        }
+
         if (_arrayEditor.AddNumbersFromString(_workDesk.WorkField.Text))
         {
             if (_dateBaseConnector.AddArray(_workDesk.WorkField.Text, _saveArrayAsWindow.LastNameBox.Text))
@@ -259,7 +279,7 @@ public partial class MyForm : Form
         }
         else
         {
-            MessageForm error = new MessageForm("Array has not numbers!", "Error");
+            MessageForm error = new MessageForm("Array has not numbers! Or any number more then " + Constants.NUMBER_IN_ARRAY_LIMIT + " or less then " + -Constants.NUMBER_IN_ARRAY_LIMIT + ".", "Error");
             error.Show();
         }
     }

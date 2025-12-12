@@ -39,7 +39,7 @@ public class ArrayEditor
         {
             foreach (int number in Numbers.Split(' ').Select(x => Convert.ToInt32(x)).ToArray())
             { 
-                if (_originalArray.Count > Constants.QUANTITY_LIMIT) break;
+                if (_originalArray.Count > Constants.QUANTITY_LIMIT || Math.Abs(number) > Constants.NUMBER_IN_ARRAY_LIMIT) break;
                 _originalArray.Add(number);
             }
             SortArray();
