@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -123,10 +123,6 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MyForm.cs",
@@ -134,7 +130,7 @@
               "RelativeDocumentMoniker": "MasterOfArrays\\MyForm.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\Lab 3\\MasterOfArrays\\MasterOfArrays\\MyForm.cs",
               "RelativeToolTip": "MasterOfArrays\\MyForm.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAcwNgAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAANUAAAAAAAAAAAAcwOkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-11T18:18:09.766Z",
               "EditorCaption": ""
@@ -149,8 +145,7 @@
               "RelativeToolTip": "UnitTest1\\Test.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T20:13:21.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T20:13:21.12Z"
             },
             {
               "$type": "Document",
@@ -162,8 +157,7 @@
               "RelativeToolTip": "MasterOfArrays\\DateBaseConnector.cs",
               "ViewState": "AgIAABEBAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:17:23.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T18:17:23.101Z"
             },
             {
               "$type": "Document",
@@ -175,8 +169,7 @@
               "RelativeToolTip": "MasterOfArrays\\WindowAccountCreating.cs",
               "ViewState": "AgIAALMAAAAAAAAAAAAswMEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T22:20:20.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T22:20:20.169Z"
             },
             {
               "$type": "Document",
@@ -188,8 +181,7 @@
               "RelativeToolTip": "MasterOfArrays\\Constants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T17:48:44.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T17:48:44.708Z"
             },
             {
               "$type": "Document",
@@ -201,8 +193,7 @@
               "RelativeToolTip": "MasterOfArrays\\ArrayEditor.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAkwDAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T20:00:16.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T20:00:16.645Z"
             },
             {
               "$type": "Document",
