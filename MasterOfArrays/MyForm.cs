@@ -200,21 +200,30 @@ public partial class MyForm : Form
         }
         else if (!uint.TryParse(_windowRandomNambers.Quantity.Text, out positiveQuantity))
         {
-            MessageForm error = new MessageForm("Not integer positive number or string overflow!", "Error");
+            MessageForm error = new MessageForm("Quantity must be positive!", "Error");
             error.Show();
             return;
         }
         else if(Math.Abs(firstLimit) > Constants.NUMBER_IN_ARRAY_LIMIT || Math.Abs(secondLimit) > Constants.NUMBER_IN_ARRAY_LIMIT)
         {
-            MessageForm error = new MessageForm("Absolute numbers cannot be more than " + Constants.QUANTITY_LIMIT + "!", "Error");
+            MessageForm error = new MessageForm("Absolute numbers cannot be more than " + Constants.NUMBER_IN_ARRAY_LIMIT + "!", "Error");
             error.Show();
             return;
         }
         else if(positiveQuantity + _arrayEditor.GetArray.Length > Constants.QUANTITY_LIMIT)
         {
-            MessageForm error = new MessageForm("You can add only " + (Constants.QUANTITY_LIMIT - _arrayEditor.GetArray.Length) + " numbers!", "Error");
-            error.Show();
-            return;
+            if(Constants.QUANTITY_LIMIT - _arrayEditor.GetArray.Length <= 0)
+            {
+                MessageForm error = new MessageForm("You can not add numbers!", "Error");
+                error.Show();
+            }
+            else
+            {
+                MessageForm error = new MessageForm("You can add only " + (Constants.QUANTITY_LIMIT - _arrayEditor.GetArray.Length) + " numbers!", "Error");
+                error.Show();
+            }
+
+           return;
         }
         _arrayEditor.AddRandomNumbers(positiveQuantity, firstLimit, secondLimit);
         _workDesk.WorkField.Text = _arrayEditor.GetStringSourceArray();
@@ -248,6 +257,12 @@ public partial class MyForm : Form
         if (_saveArrayAsWindow.LastNameBox.Text.Length > Constants.MAX_LENGTH)
         {
             MessageForm error = new MessageForm("String lengh must be less then " + Constants.MAX_LENGTH + "!", "Error");
+            error.Show();
+            return;
+        }
+        if(string.IsNullOrEmpty(_saveArrayAsWindow.LastNameBox.Text))
+        {
+            MessageForm error = new MessageForm("Enter array number!", "Error");
             error.Show();
             return;
         }

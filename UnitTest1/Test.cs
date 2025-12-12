@@ -23,9 +23,9 @@ public sealed class Test
     {
         for (int i = 0; i < quantity; i++)
         {
-            arrayEditor.AddRandomNumbers((uint)random.Next(0, Constants.QUANTITY_LIMIT),
-                                     random.Next(-Constants.NUMBER_IN_ARRAY_LIMIT, Constants.NUMBER_IN_ARRAY_LIMIT),
-                                     random.Next(-Constants.NUMBER_IN_ARRAY_LIMIT, Constants.NUMBER_IN_ARRAY_LIMIT));
+            arrayEditor.AddRandomNumbers((uint)random.Next(0, Constants.QUANTITY_LIMIT_FOR_TESTS),
+                                     random.Next(-Constants.NUMBER_IN_ARRAY_LIMIT_FOR_TESTS, Constants.NUMBER_IN_ARRAY_LIMIT_FOR_TESTS),
+                                     random.Next(-Constants.NUMBER_IN_ARRAY_LIMIT_FOR_TESTS, Constants.NUMBER_IN_ARRAY_LIMIT_FOR_TESTS));
             dbConnector.AddArray(arrayEditor.GetStringSourceArray(), ("Array " + i));
         }
         return quantity == dbConnector.UserArrays.Count;
