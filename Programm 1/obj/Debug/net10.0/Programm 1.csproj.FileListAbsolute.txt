@@ -12,3 +12,4 @@ C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSTI TU\Programm 1\obj\Debug\n
 C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSTI TU\Programm 1\obj\Debug\net10.0\Programm 1.pdb
 C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSTI TU\Programm 1\obj\Debug\net10.0\Programm 1.genruntimeconfig.cache
 C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSTI TU\Programm 1\obj\Debug\net10.0\ref\Programm 1.dll
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSTI TU\Programm 1\obj\Debug\net10.0\Programm 1.sourcelink.json

@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace TaskI;
+﻿namespace TaskI;
 
 internal class MenuObject
 {

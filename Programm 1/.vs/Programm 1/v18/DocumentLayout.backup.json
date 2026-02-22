@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\programm 1\\consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|solutionrelative:consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\programm 1\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|solutionrelative:triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\programm 1\\programobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|solutionrelative:programobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\programm 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,18 +23,24 @@
       "RelativeMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|solutionrelative:menuoperationobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\programm 1\\menuobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|solutionrelative:menuobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E2A68A7-BD55-4631-9356-3970DD276324}|..\\TestProject\\TestProject.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\testproject\\testproject.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E2A68A7-BD55-4631-9356-3970DD276324}|..\\TestProject\\TestProject.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\testproject\\testproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E2A68A7-BD55-4631-9356-3970DD276324}|..\\TestProject\\TestProject.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\testproject\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E2A68A7-BD55-4631-9356-3970DD276324}|..\\TestProject\\TestProject.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\testproject\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\programm 1\\menuobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|solutionrelative:menuobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\programm 1\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|solutionrelative:triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|c:\\users\\ivar\\desktop\\\u0441\u043A\u043B\u0430\u0434\\programming\\c#\\spbsti tu\\programm 1\\consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07E28D25-D696-DF28-EA0C-6A8D2047FE65}|Programm 1.csproj|solutionrelative:consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -80,20 +90,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ProgramObject.cs",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\ProgramObject.cs",
+              "RelativeDocumentMoniker": "ProgramObject.cs",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\ProgramObject.cs",
+              "RelativeToolTip": "ProgramObject.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T19:56:29.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestProject.csproj",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\TestProject\\TestProject.csproj",
+              "RelativeDocumentMoniker": "..\\TestProject\\TestProject.csproj",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\TestProject\\TestProject.csproj",
+              "RelativeToolTip": "..\\TestProject\\TestProject.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-18T11:33:25.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TestProject",
+              "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\TestProject\\TestProject.csproj",
+              "RelativeDocumentMoniker": "..\\TestProject\\TestProject.csproj",
+              "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\TestProject\\TestProject.csproj",
+              "RelativeToolTip": "..\\TestProject\\TestProject.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-18T11:33:35.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Consts.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\Consts.cs",
               "RelativeDocumentMoniker": "Consts.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\Consts.cs",
               "RelativeToolTip": "Consts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T02:08:06.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T02:08:06.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "MSTestSettings.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\TestProject\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "..\\TestProject\\MSTestSettings.cs",
@@ -101,25 +148,24 @@
               "RelativeToolTip": "..\\TestProject\\MSTestSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T02:03:20.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T02:03:20.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Test1.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\TestProject\\Test1.cs",
               "RelativeDocumentMoniker": "..\\TestProject\\Test1.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\TestProject\\Test1.cs",
               "RelativeToolTip": "..\\TestProject\\Test1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T02:03:07.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MenuOperationObject.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\MenuOperationObject.cs",
               "RelativeDocumentMoniker": "MenuOperationObject.cs",
@@ -132,52 +178,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "MenuObject.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\MenuObject.cs",
               "RelativeDocumentMoniker": "MenuObject.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\MenuObject.cs",
               "RelativeToolTip": "MenuObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T12:15:35.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Point.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\Point.cs",
               "RelativeDocumentMoniker": "Point.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\Point.cs",
               "RelativeToolTip": "Point.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCQAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T08:16:08.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Triangle.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\Triangle.cs",
               "RelativeDocumentMoniker": "Triangle.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\Triangle.cs",
               "RelativeToolTip": "Triangle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T08:15:20.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Ivar\\Desktop\\\u0421\u043A\u043B\u0430\u0434\\Programming\\C#\\SPBSTI TU\\Programm 1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T07:04:25.173Z",
               "EditorCaption": ""
