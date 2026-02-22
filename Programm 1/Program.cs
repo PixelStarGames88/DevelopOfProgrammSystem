@@ -15,7 +15,7 @@ internal class Programm
         mainMenu.Operations[1].SomeOperation += () => ProgramObject.HandleInpiut();
         mainMenu.Operations[2].SomeOperation += () => Console.WriteLine("До свидания! До новых встреч!!!");
 
-        Console.WriteLine(Consts.Message);
+        Console.WriteLine("Приветствуем вас в программе\nВасянина Ильи Александровича!\nСтудента группы 444, выполнившего\nлабораторную работу 1, варианта 6!!!\n");
         do
         {
             do

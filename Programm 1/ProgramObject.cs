@@ -39,7 +39,7 @@ public class ProgramObject
         Triangle someTriangle = new Triangle(PointA, PointB, PointC);
 
         if (someTriangle.IsPoint()) { Console.WriteLine("Точки образуют точку!! Не треугольник!!!"); return; }
-        if (someTriangle.IsLine()) { Console.WriteLine("Точки образуют пряиую!! Не треугольник!!!"); return; }
+        if (someTriangle.IsLine()) { Console.WriteLine("Точки образуют прямую!! Не треугольник!!!"); return; }
         somePoint.PointInTrangle(someTriangle);
     }
 
@@ -65,7 +65,7 @@ public class ProgramObject
         Point somePoint = Point.GenerateRandomPoint(firstPointX, secondPointX, firstPointY, secondPointY);
 
         if (someTriangle.IsPoint()) { Console.WriteLine("Точки образуют точку!! Не треугольник!!!"); return; }
-        if (someTriangle.IsLine()) { Console.WriteLine("Точки образуют пряиую!! Не треугольник!!!"); return; }
+        if (someTriangle.IsLine()) { Console.WriteLine("Точки образуют прямую!! Не треугольник!!!"); return; }
         somePoint.PointInTrangle(someTriangle);
     }
 }

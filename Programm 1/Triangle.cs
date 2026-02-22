@@ -5,22 +5,22 @@ namespace TaskI;
 
 public class Triangle
 {
-    public Point pointA { get; }
-    public Point pointB { get; }
-    public Point pointC { get; }
+    public Point PointA { get; }
+    public Point PointB { get; }
+    public Point PointC { get; }
 
     public Triangle(Point pointA, Point pointB, Point pointC)
     {
-        this.pointA = pointA;
-        this.pointB = pointB;
-        this.pointC = pointC;
+        this.PointA = pointA;
+        this.PointB = pointB;
+        this.PointC = pointC;
     }
 
     public double GetSquare()
     {
-        double a = Math.Sqrt(Math.Pow((pointA - pointB).pointX, 2) + Math.Pow((pointA - pointB).pointY, 2));
-        double b = Math.Sqrt(Math.Pow((pointC - pointB).pointX, 2) + Math.Pow((pointC - pointB).pointY, 2));
-        double c = Math.Sqrt(Math.Pow((pointC - pointA).pointX, 2) + Math.Pow((pointC - pointA).pointY, 2));
+        double a = Math.Sqrt(Math.Pow((PointA - PointB).PointX, 2) + Math.Pow((PointA - PointB).PointY, 2));
+        double b = Math.Sqrt(Math.Pow((PointC - PointB).PointX, 2) + Math.Pow((PointC - PointB).PointY, 2));
+        double c = Math.Sqrt(Math.Pow((PointC - PointA).PointX, 2) + Math.Pow((PointC - PointA).PointY, 2));
         double p = (a + b + c) / 2;
         return (Math.Sqrt(p * (p - a) * (p - b) * (p - c)));
     }
@@ -35,24 +35,19 @@ public class Triangle
     }
 
     public bool IsPoint() =>
-    (Math.Round(pointA.pointX, 2) == Math.Round(pointB.pointX, 2) && Math.Round(pointB.pointX, 2) == Math.Round(pointC.pointX, 2) &&
-     Math.Round(pointA.pointY, 2) == Math.Round(pointB.pointY, 2) && Math.Round(pointB.pointY, 2) == Math.Round(pointC.pointY, 2));
+    (PointA.PointX.Equals(PointB.PointX) && PointB.PointX.Equals(PointC.PointX) &&
+     PointA.PointY.Equals(PointB.PointY) && PointA.PointY.Equals(PointC.PointY));
 
     public bool IsLine()
     {
-        List<double> xPoints = new List<double>(), yPoints = new List<double>();
-        xPoints.Add(pointA.pointX); yPoints.Add(pointA.pointY);
-        xPoints.Add(pointB.pointX); yPoints.Add(pointB.pointY);
-        xPoints.Add(pointC.pointX); yPoints.Add(pointC.pointY);
+        List<Point> points = new List<Point> { PointA, PointB, PointC };
+        foreach (Point firstPoint in points)
+            foreach (Point secondPoint in points)
+                foreach (Point thirdPoint in points)
+                    if(((firstPoint.PointY - thirdPoint.PointY) / (secondPoint.PointY - thirdPoint.PointY)).Equals((firstPoint.PointX - thirdPoint.PointX) / (secondPoint.PointX - thirdPoint.PointX)) &&
+                        !firstPoint.Equals(secondPoint) && !firstPoint.Equals(thirdPoint) && !thirdPoint.Equals(secondPoint))
+                        return true;
 
-        if((Math.Round(pointA.pointX, 2) == Math.Round(pointB.pointX, 2) && Math.Round(pointB.pointX, 2) == Math.Round(pointC.pointX, 2)) ^
-           (Math.Round(pointA.pointY, 2) == Math.Round(pointB.pointY, 2) && Math.Round(pointB.pointY, 2) == Math.Round(pointC.pointY, 2)))
-            return true;
-        
-        if(((yPoints.Max() - yPoints.Min()) / (xPoints.Max() - xPoints.Min()) ==
-            yPoints.Single(n => n != yPoints.Max() && n != yPoints.Min()) /
-            xPoints.Single(n => n != xPoints.Max() && n != xPoints.Min())))
-            return true;
         return false;   
     }
 
