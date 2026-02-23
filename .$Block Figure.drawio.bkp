@@ -1,0 +1,75 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Страница-1" id="aXW2V99AKJSoKGqFFgWg">
+    <mxGraphModel dx="868" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9wVLYwpdGiu151FpSWtg-8" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Начало" vertex="1">
+          <mxGeometry height="50" width="137.5" x="21.25" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-9" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Ввод координат&amp;nbsp;&lt;div&gt;для точки и вершин треугольника&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Конец" vertex="1">
+          <mxGeometry height="50" width="137.5" x="248.75" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-10" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Расчет длин ребер по формуле (1)" vertex="1">
+          <mxGeometry height="60" width="120" x="30" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-12" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Расчет полупериметра по формуле (2)" vertex="1">
+          <mxGeometry height="60" width="120" x="30" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-16" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Расчет площади заданного треугольника по формуле (3)" vertex="1">
+          <mxGeometry height="60" width="120" x="30" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-19" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-21" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Сумма площадей&amp;nbsp;&lt;div&gt;треугольников&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;равна площади заданного&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="185" x="225" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-17" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Расчет площадей тругольников образованных ребрами и заданной точкой по формуле (3)" vertex="1">
+          <mxGeometry height="60" width="180" x="227.5" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-22" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-18" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Вывод False" vertex="1">
+          <mxGeometry height="50" width="140" x="247.5" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-23" edge="1" parent="1" source="9wVLYwpdGiu151FpSWtg-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9wVLYwpdGiu151FpSWtg-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="522.5" y="335" />
+              <mxPoint x="317.5" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9wVLYwpdGiu151FpSWtg-20" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Вывод True" vertex="1">
+          <mxGeometry height="50" width="140" x="452.5" y="255" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

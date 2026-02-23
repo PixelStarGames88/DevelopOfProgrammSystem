@@ -1,5 +1,5 @@
-﻿namespace TaskI;
-
+﻿//ProgramObject.cs
+namespace TaskI;
 public class ProgramObject
 {
     static public void HandleInpiut()

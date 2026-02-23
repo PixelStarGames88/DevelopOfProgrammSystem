@@ -1,5 +1,5 @@
-﻿namespace TaskI;
-
+﻿//MenuObject.cs
+namespace TaskI;
 internal class MenuObject
 {
     public List<MenuOperationObject> Operations { get; init; } = null!;

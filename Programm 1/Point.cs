@@ -1,4 +1,5 @@
-﻿namespace TaskI;
+﻿//Point.cs
+namespace TaskI;
 public class Point
 {
     public double PointX { get; set; }

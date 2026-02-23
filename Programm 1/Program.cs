@@ -1,4 +1,5 @@
-﻿namespace TaskI;
+﻿//Program.cs
+namespace TaskI;
 
 internal class Programm
 {

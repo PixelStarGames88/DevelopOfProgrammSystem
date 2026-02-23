@@ -1,8 +1,5 @@
-﻿using System.Linq;
-using System.Runtime.ExceptionServices;
-
+﻿//Triangle.cs
 namespace TaskI;
-
 public class Triangle
 {
     public Point PointA { get; }
@@ -44,11 +41,11 @@ public class Triangle
         foreach (Point firstPoint in points)
             foreach (Point secondPoint in points)
                 foreach (Point thirdPoint in points)
-                    if(((firstPoint.PointY - thirdPoint.PointY) / (secondPoint.PointY - thirdPoint.PointY)).Equals((firstPoint.PointX - thirdPoint.PointX) / (secondPoint.PointX - thirdPoint.PointX)) &&
+                    if (((firstPoint.PointY - thirdPoint.PointY) / (secondPoint.PointY - thirdPoint.PointY)).Equals((firstPoint.PointX - thirdPoint.PointX) / (secondPoint.PointX - thirdPoint.PointX)) &&
                         !firstPoint.Equals(secondPoint) && !firstPoint.Equals(thirdPoint) && !thirdPoint.Equals(secondPoint))
                         return true;
 
-        return false;   
+        return false;
     }
 
 }
