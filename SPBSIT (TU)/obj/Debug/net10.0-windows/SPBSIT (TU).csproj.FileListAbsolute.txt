@@ -1,0 +1,19 @@
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\bin\Debug\net10.0-windows\SPBSIT (TU).exe
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\bin\Debug\net10.0-windows\SPBSIT (TU).deps.json
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\bin\Debug\net10.0-windows\SPBSIT (TU).runtimeconfig.json
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\bin\Debug\net10.0-windows\SPBSIT (TU).dll
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\bin\Debug\net10.0-windows\SPBSIT (TU).pdb
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT (TU).csproj.GenerateResource.cache
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT (TU).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT (TU).AssemblyInfoInputs.cache
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT (TU).AssemblyInfo.cs
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT (TU).csproj.CoreCompileInputs.cache
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT (TU).dll
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\refint\SPBSIT (TU).dll
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT (TU).pdb
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT (TU).genruntimeconfig.cache
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\ref\SPBSIT (TU).dll
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT__TU_.InfoForm.resources
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT__TU_.MainForm.resources
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT__TU_.MessageForm.resources
+C:\Users\Ivar\Desktop\Склад\Programming\C#\SPBSIT (TU)\SPBSIT (TU)\obj\Debug\net10.0-windows\SPBSIT__TU_.TableForm.resources
